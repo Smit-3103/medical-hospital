@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Medicoz - Medical Clinic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+  <div class="main-header"></div>
+  
+  <div class="bg-gray-100 hidden md:block">
+    <div class="container mx-auto px-6 py-2 flex justify-between items-center text-sm text-gray-600">
+      <div class="flex items-center space-x-2">
+        <span class="material-icons text-sm">location_on</span>
+        <span>241 Union, Los Angeles, California, US</span>
+      </div>
+      <div class="flex items-center space-x-6">
+        <span>Mon-Sun 8:00 - 18:00 Sunday Closed</span>
+        <div class="flex items-center space-x-3">
+          <a class="text-gray-600 hover:text-blue-600" href="#"><img alt="Facebook icon" class="w-4 h-4"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkO1l_qqW5Ns9xaawwtffcav4INSgvbjHC2kQNQFDuLvWgzcbM2H8sOyrlBGP_S00BInd2cuJlRphiYxYXhPGKMIICMkpEnj7N-w0xJUcK6POEaOxf0PFzaN2xxDTVpIfZVMavd1HIkcj0FmIi2pOH9mVQwA8yAp6P5da0x6iD637F_8QDImYsWxOlIFC0ako9XvMzx-dnteyZrs6cdUu7cQM3lcNrTJPHGac5oRl-GeUTT0GhdPyY9gfXMlDf91pPOaUZqJtWnHw" /></a>
+          <a class="text-gray-600 hover:text-blue-600" href="#"><img alt="Twitter icon" class="w-4 h-4"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCtIzEF2volqit7J_cQFP2b5Uwqr1-CQvs-xUy2Uy0cCNUz4KuAbxzLNClTM2Z3sBMfTCwr9LVWSSlxmWAnTNrDbni3IxrKUptNJMpcL4yt0-0iMZfEonhmkhmqmlbMUfsG2mRpX92Nf1-xuUdEFjZXAn4TC_Z3Y3uQp0abnLZwDEXNzM9A6yRSIiBdpI8HUimexYITPMiwuuNHyJHT9kEOk9XuoTlTSSkvXXCOI8vYdAS0tc-T8hGZLV9JuJawL3IP90Y3t3y65A" /></a>
+          <a class="text-gray-600 hover:text-blue-600" href="#"><img alt="LinkedIn icon" class="w-4 h-4"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXfjzyK6uMcxZ_zhrvRaXLI7nbSIuPG73e8TUeq1rwYakpS5WU8lvzTh0Pu5Qt2i0lK6xGkFS1S8B-m7HbX3OiqxM_Gzpj5PeUd3aU87lk8m0fsRF_u-fWx9BHqMiwMldxTlY8tAGKYEK57eezERTj8H5mvZjb4jkNwmFrrBJNPExR6vLiAFBA-UakLJkrYAO8iZc2IcNOOI61xemuyPuMrR7yW7AGH-UfQygeQxWppmI0J07rrhFF5WlEtIU9IFi8BVCT6WwtFtE" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a class="text-2xl font-bold text-gray-800" href="#">Medicoz</a>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a class="text-blue-600 font-semibold" href="#">Home</a>
+        <a class="text-gray-600 hover:text-blue-600" href="#">Pages</a>
+        <a class="text-gray-600 hover:text-blue-600" href="#">Doctors</a>
+        <a class="text-gray-600 hover:text-blue-600" href="#">Departments</a>
+        <a class="text-gray-600 hover:text-blue-600" href="#">Blog</a>
+        <a class="text-gray-600 hover:text-blue-600" href="#">Shop</a>
+        <a class="text-gray-600 hover:text-blue-600" href="#">Contact</a>
+      </nav>
+      <a class="hidden md:inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700"
+        href="#">Appointment</a>
+      <button class="md:hidden">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+  </header>
+  <section class="relative bg-no-repeat bg-cover bg-center" style="background-image: url('./public/images/home_banner_image_1.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+    <div class="container mx-auto px-6 py-20 md:py-32 relative z-10 flex items-center">
+      <div class="w-full md:w-1/2 text-white">
+        <p class="text-lg font-medium">Welcome to our Medical Care Center</p>
+        <h1 class="text-4xl md:text-6xl font-bold mt-2 mb-4">We Take Care Our Patients Health</h1>
+        <p class="mb-8 text-gray-200">I realized that becoming a doctor was my choice and my destiny. I knew that I
+          wanted to help people and I knew that I had to become a doctor to do that.</p>
+        <div class="flex space-x-4">
+          <a class="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700" href="#">About Us</a>
+          <a class="bg-white text-blue-600 px-8 py-3 rounded-md hover:bg-gray-100" href="#">Our Services</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-24 relative z-20">
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <span class="material-icons text-blue-600 text-4xl mb-4">verified_user</span>
+            <h3 class="font-bold text-lg mb-2">Quality &amp; Safety</h3>
+            <p class="text-gray-600 text-sm">Our hospital has been providing quality and safety care for patients.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <span class="material-icons text-blue-600 text-4xl mb-4">biotech</span>
+            <h3 class="font-bold text-lg mb-2">Leading Technology</h3>
+            <p class="text-gray-600 text-sm">We provide the best medical equipment for our patients and have a team of
+              professionals.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <span class="material-icons text-blue-600 text-4xl mb-4">people_alt</span>
+            <h3 class="font-bold text-lg mb-2">Experts by Experience</h3>
+            <p class="text-gray-600 text-sm">Our doctors are experts in their fields and have years of experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+      <div class="w-full md:w-1/2 relative">
+        <div class="relative w-full h-96">
+          <div class="absolute top-0 left-0 w-48 h-48 md:w-64 md:h-64 bg-cover bg-center rounded-full"
+            style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpKGilhrV-Ue6zXEFO6SusHGu7MVqalnKVRWt3H46IkbLOeR6ILguk9VNfWDfOx1R00e4SPEoQQxINNw7cVWotxu9XF1mmkS0GRI4k_HaAkEDay66v5XuxA-Yv7O_ulNQaGngAEAbj8ylwpg4S3AMFgmupNXkzISh1XiFWDieD1SCmx0rSPT_W6GeLgP1qkH2p77rXNwrigXtO61PsnN3U8agalh5im2_oEM2HFsJK0s5bXCUlnX6HjshqcuxrCYkLRAvVRe-Plr4');">
+          </div>
+          <div class="absolute bottom-0 right-0 w-56 h-56 md:w-72 md:h-72 bg-cover bg-center rounded-full"
+            style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpKGilhrV-Ue6zXEFO6SusHGu7MVqalnKVRWt3H46IkbLOeR6ILguk9VNfWDfOx1R00e4SPEoQQxINNw7cVWotxu9XF1mmkS0GRI4k_HaAkEDay66v5XuxA-Yv7O_ulNQaGngAEAbj8ylwpg4S3AMFgmupNXkzISh1XiFWDieD1SCmx0rSPT_W6GeLgP1qkH2p77rXNwrigXtO61PsnN3U8agalh5im2_oEM2HFsJK0s5bXCUlnX6HjshqcuxrCYkLRAvVRe-Plr4');">
+            <div class="w-full h-full flex items-center justify-center bg-blue-600 bg-opacity-50">
+              <span class="material-icons text-white text-6xl">play_arrow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <p class="text-blue-600 font-semibold">OUR MEDICAL</p>
+        <h2 class="text-3xl font-bold text-gray-800 my-4">We're setting Standards in Research what's more, Clinical
+          Care.</h2>
+        <p class="text-gray-600 mb-6">We provide the most full medical services, so every person could have the
+          opportunity to receive qualitative medical help. Our Clinic has grown to provide a world class facility for
+          the treatment of tooth loss, dental cosmetics and bore advanced restorative dentistry.</p>
+        <a class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700" href="#">More about</a>
+        <img alt="Signature" class="mt-8 h-12"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1lxGdHcYoteUPUALmRyoRyFtI9ihNyNK-EIufeR32l7EHutHe-IcoXH13q_K-M4jlM_UD7nmwcStpl7Ltonq1MqenCUK8hFmEZP6vBTCSkkeh127SfadOHxBF17IGI52KoVTlV_I2_45lm2ImfhodikB0Rus2P2jJmpWw2_PyE4hinmolOgDKzh3_EeQmnwQ3ouzob942IU9S1plD3GHPXtVQza405sd5MZ9bUv2WjumB_TDniNgsI4yHTSb5YuDJcKyNWuIfXjA" />
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-white"
+    style="background-image: url('image-5.png'); background-repeat: no-repeat; background-position: center; background-size: contain;">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-blue-600 font-semibold">OUR SERVICES</p>
+      <h2 class="text-3xl font-bold text-gray-800 my-4">We Care Our Patients.</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 text-center">
+        <div class="p-8 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
+          <span class="material-icons text-blue-600 text-4xl mb-4">checklist</span>
+          <h3 class="font-bold text-lg mb-2">Health Check</h3>
+          <p class="text-gray-600">We offer a wide range of health check packages to suit your needs.</p>
+        </div>
+        <div class="p-8 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
+          <span class="material-icons text-blue-600 text-4xl mb-4">medical_services</span>
+          <h3 class="font-bold text-lg mb-2">Operation Theater</h3>
+          <p class="text-gray-600">Our operation theaters are equipped with the latest technology.</p>
+        </div>
+        <div class="p-8 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
+          <span class="material-icons text-blue-600 text-4xl mb-4">medication</span>
+          <h3 class="font-bold text-lg mb-2">Pharmacy Support</h3>
+          <p class="text-gray-600">We have a 24/7 pharmacy with a wide range of medicines.</p>
+        </div>
+        <div class="p-8 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
+          <span class="material-icons text-blue-600 text-4xl mb-4">emergency</span>
+          <h3 class="font-bold text-lg mb-2">Ambulance Car</h3>
+          <p class="text-gray-600">Our ambulance services are available 24/7 for any emergency.</p>
+        </div>
+        <div class="p-8 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
+          <span class="material-icons text-blue-600 text-4xl mb-4">science</span>
+          <h3 class="font-bold text-lg mb-2">Lab Tests</h3>
+          <p class="text-gray-600">We have a state-of-the-art laboratory for all kinds of tests.</p>
+        </div>
+        <div class="p-8 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
+          <span class="material-icons text-blue-600 text-4xl mb-4">masks</span>
+          <h3 class="font-bold text-lg mb-2">Intensive Care</h3>
+          <p class="text-gray-600">Our intensive care unit is equipped to handle critical patients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-blue-600 font-semibold">OUR DOCTORS</p>
+      <h2 class="text-3xl font-bold text-gray-800 my-4">Our Dedicated Doctors Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Doctor 1" class="w-full h-64 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC3gmfkzA0NXspz7caLoB2wrHFa7QvH2sE16xLIQgLVdTOIAuUd1RE9L_tNeJVHQxRH2Jz7w7Fgf3lnFTrcE96kBqWonxkrEYFzqR9-Lpqoy75_Olx0g08ePTcxrygQAYLMFrcaQYcre19ToN5tBna86hxBrNkB3tk3ghI8AQoflHVXs1Fy6SpK2Sc9rtfOnNFZ9OWxFwj4zjxJh6-T29TFs3je6OklwDg8ni_wFCZAmv5vvxhANwQrwnolPHLO6wy7umWQeB1km4" />
+          <div class="p-6">
+            <h3 class="font-bold text-lg">Dr. John Doe</h3>
+            <p class="text-blue-600">Cardiologist</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Doctor 2" class="w-full h-64 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD22FOE_Kt1Si-LJaJ0uXgzfXKGgoF5Qtj5spllUkL7H_oSAfdwAYK6r-xOk5QNp7S_NXCHBQXub8oo6quLtxTKFh7-iHS9vVUsP3z3zeDhzUWjNmOXVH2UbOBetvf-g3v-OOqca7oWX2HP210MYkDuPA_zLccOy3_04VN9D_eig9cSuI20E-NE1nnNCde58xHciGDv8S_4Iu2WSr2NvajJaasHABuk1DC4JNwfM6C-aG7IbStsxL64eVX9HBgqZ3hvgs0VxlvJtuk" />
+          <div class="p-6">
+            <h3 class="font-bold text-lg">Dr. Jane Smith</h3>
+            <p class="text-blue-600">Neurologist</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Doctor 3" class="w-full h-64 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtLdpustAYDhQpSqvXkzeGTB5GEAVhjmWKaePfgsTnWdMdJwG9FxApiGUMimCqw8apIi8dHX4_NQkdszTRZEeETC1_MsxM0WwbRBNaNNwXXz7SnEE2stPfF6m4VQMp4xyWHk1IQOKQRTUiGKrJepQqRkRKxVbLA8eFkgCwk4SibPRFjrZ2i6F9pLC8nAsnlLG1ea4HWQ6cfTbNFQ32GuD1w6g5hlPPFZIwAV9whHzvwV3eM6I-hZ41bDPvmHywzHhdk-GZJyFaVx4" />
+          <div class="p-6">
+            <h3 class="font-bold text-lg">Dr. Sam Wilson</h3>
+            <p class="text-blue-600">Pediatrician</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Doctor 4" class="w-full h-64 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp0zdkVWtqxhjkScAg7T6NPgIfVKmC-ieB1yNn3BmmjDOEIW5YqP_LkEuTmaTn-2kFD1GOK-axvrDJ2tv0rWTKtBuZnkg_qcqcZy1s_pFk6WoAwbAoHh86xRUOM6aDZGZY1RzCVKcJfrQKngrPKuSO-LnsO7L9p-CCOrMNZToI5GutLbRpI3SvK5Qwx-e_K7O8CAH639NZfEIdf2bzdLTr3xPa2EsSwjrSjNGdWafk9DDVLCHzn3_LUAVIjPlT-pn4bKpgJ5IFbY8" />
+          <div class="p-6">
+            <h3 class="font-bold text-lg">Dr. Emily Brown</h3>
+            <p class="text-blue-600">Dermatologist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-blue-600 text-white">
+    <div class="container mx-auto px-6 py-12 md:py-0 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+        <h2 class="text-3xl font-bold mb-4">Just Make an Appointment and You’re Done!</h2>
+        <p class="text-lg mb-6">Get Your Quote or Call: <span class="font-bold">(0080) 123-453-789</span></p>
+        <a class="bg-white text-blue-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-200" href="#">Get
+          Appointment</a>
+      </div>
+      <div class="md:w-1/2">
+        <img alt="Female doctor with clipboard" class="mx-auto"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz5qlLTBXQwTRu3h9nolRHzDvbcMvJ1UW7T9UcacEopkJz2DR49ts3nnJLQ8sTw5oZy0LvS7DszeEYANQJChhhEMHQIyvztwfzkeDVdPIuZYjvvlGnpqyWCWhXhvX8o-az2iicfVKnvpPWDc95cs-m8we9cwmkyi6nk52IpvkybHtk3UNfdzO2Zpv3s6roIPgQ8A9IX5v0X3hTDgqW49inrZlDcv5Oj95CLCJF58bFZxEyGTU4nrcGIe0zD0BWBg_-MKRe2ahR3A0" />
+      </div>
+    </div>
+    <div class="bg-blue-700 py-8">
+      <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <p class="text-4xl font-bold">1</p>
+          <p>Years of Experience</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold">31</p>
+          <p>Medical Doctors</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold">45</p>
+          <p>Patient's Success</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold">802</p>
+          <p>Expert Nurses</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 my-4">What Says Our Patients</h2>
+      <div class="relative mt-12">
+        <div class="flex items-center justify-center space-x-4">
+          <div class="w-full max-w-2xl bg-white p-8 rounded-lg shadow-lg relative">
+            <p class="text-gray-600 mb-6 italic">"Medical Center is a great place to get all of your medical needs. I
+              came in for a check up and did not have to wait more than 5 minutes before I was seen. I can only imagine
+              the type of service you get for more serious issues. Thanks!"</p>
+            <div class="flex items-center justify-center">
+              <img alt="Patient photo" class="w-16 h-16 rounded-full mr-4 object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRiZU4z0FTqKUs-5TY4Ya6uGtwavmiG2myADQrrFI1ZgTKKaGwU1uBW4k2zjZ0Ng6-qZGM7JBXn7IbZ8l4Gv8ZM86WBeguI8rNEdC9b-qjdPr7-eFSKi9A-lDL3Y3daMR56z8z3arheOIVfFtcphhEYUuXkRPidkhSmK5Smu7nHFiRabP4BZ-s3oi-URfFHJJ5oZxnV_sDehOmSAT8AutGUnRIlawZZ1-HawocEdxCFAUmiMD_8mUj1-H7Dh4RpcGoICER-ezNnWU" />
+              <div>
+                <h4 class="font-bold">John Doe</h4>
+                <p class="text-sm text-gray-500">Patient</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="absolute top-1/2 left-0 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+          <span class="material-icons text-blue-600">chevron_left</span>
+        </button>
+        <button class="absolute top-1/2 right-0 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+          <span class="material-icons text-blue-600">chevron_right</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-blue-600 font-semibold">PRICING PLAN</p>
+      <h2 class="text-3xl font-bold text-gray-800 my-4">Our Price</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+        <div class="border border-gray-200 rounded-lg p-6 text-left hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-bold mb-2">Cardiology</h3>
+          <p class="text-3xl font-bold text-blue-600 mb-4">$299</p>
+          <ul class="space-y-3 text-gray-600 mb-6">
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Functional
+              Diagnotics</li>
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Allergens
+              Drugs</li>
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Pcr
+              Covid-19 Testing</li>
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Heart
+              Rhythm</li>
+          </ul>
+          <a class="w-full block text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700" href="#">Get
+            offer</a>
+        </div>
+        <div class="border border-blue-600 rounded-lg p-6 text-left shadow-xl relative">
+          <span
+            class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</span>
+          <h3 class="text-xl font-bold mb-2">Dental Care</h3>
+          <p class="text-3xl font-bold text-blue-600 mb-4">$120</p>
+          <ul class="space-y-3 text-gray-600 mb-6">
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Tooth
+              implantation</li>
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Teeth
+              Whitening</li>
+            <li class="flex items-center"><span
+                class="material-icons text-green-500 mr-2">check_circle</span>Prosthetics</li>
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Children's
+              Dentistry</li>
+          </ul>
+          <a class="w-full block text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700" href="#">Get
+            offer</a>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-6 text-left hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-bold mb-2">Body Checkup</h3>
+          <p class="text-3xl font-bold text-blue-600 mb-4">$150</p>
+          <ul class="space-y-3 text-gray-600 mb-6">
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>X-Ray</li>
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Ultrasound
+            </li>
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>MRI</li>
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>CT Scan
+            </li>
+          </ul>
+          <a class="w-full block text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700" href="#">Get
+            offer</a>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-6 text-left hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-bold mb-2">Blood Test</h3>
+          <p class="text-3xl font-bold text-blue-600 mb-4">$100</p>
+          <ul class="space-y-3 text-gray-600 mb-6">
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Complete
+              Blood Count</li>
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Blood
+              Chemistry</li>
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Blood
+              Enzyme</li>
+            <li class="flex items-center"><span class="material-icons text-green-500 mr-2">check_circle</span>Blood
+              Clotting</li>
+          </ul>
+          <a class="w-full block text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700" href="#">Get
+            offer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-gray-800 my-4">Recent Articles and News</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Article image" class="w-full h-48 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS5nNawhvhaOl-69N1kFjf04EJLnOOMWgZ6A4WkJSQk4balPnepo_KyNCf9LMIpYwaUyN6g24dv5_hJjLOYEGzrG6YpJxsKsRF7F4QwuMvOAplG7AXxOT8QkUtfR1WW7Dmcsf6XmdR126IhKYAPCADOiBGVT4UWTPXgbIYo63_ky7XImVWZZY_Q9-RMTXlYOAC7sTa5XMtzZz31b6JmNCAt0hJ6nXqZ4QegY4RFnDmvpp5lLT0lxhNQXmKR6XtBwJVinLwGCIKoNM" />
+          <div class="p-6">
+            <p class="text-sm text-gray-500 mb-2">28 Nov, 2023</p>
+            <h3 class="font-bold text-lg mb-2 hover:text-blue-600"><a href="#">What is the success rate of a root
+                canal?</a></h3>
+            <p class="text-gray-600 text-sm mb-4">A root canal is a treatment to repair and save a badly damaged or
+              infected tooth...</p>
+            <p class="text-sm text-gray-500">By Adam Jean</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Article image" class="w-full h-48 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCL_iFi4--QxsKeEMWEuw8VuRVr5DTrJ0nE0-_NAc_coQknZTysYJTqARjW_THt5Wntw7h_FeqP5jFVsvRQywJMaWtCSDd22cDmxFw18u7ioO1ChzNjz1QBgFv5dmKFLsvXmtFSFLl7bob4ajOrL4GFtrCeSuCOKjooT0CqFlkwaKR2EzVIJbG1FmViY5esSPOj7NV2V0Kgjpx0y8BvABmGM7KZyDLwSL6hkKqyfYDMbFh2_dI64KmIKAmumD26Ny6ts28GhQKWcA" />
+          <div class="p-6">
+            <p class="text-sm text-gray-500 mb-2">28 Nov, 2023</p>
+            <h3 class="font-bold text-lg mb-2 hover:text-blue-600"><a href="#">How to handle your kids's dental
+                anxiety?</a></h3>
+            <p class="text-gray-600 text-sm mb-4">Dental anxiety is a common problem in children. It can be caused by a
+              variety...</p>
+            <p class="text-sm text-gray-500">By Adam Jean</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Article image" class="w-full h-48 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD71OhoVzJwJDH__x8BM5479ny72LFeOGAI0GGMsE2MEGP_t9A9WYyoxIRMUJTWB5aALq_aCCIhA8OyRVle2qnSaUPf_31cm1yyRc0A4wAUp6igtKzi-czfGTG8e0oxTPiOKrz6dILMvwdXzZViq8dbkMwXOJlV7rAu8FhJMfyZGwPwsDZ8cdCt2qHvfdSDIFLjsce7FkcLzJQTK_jdU6FekQ_0w7xB7GtJlqPAbtNvEiKre-7FHgtZytLgBDou0GwjadkLKslgN4I" />
+          <div class="p-6">
+            <p class="text-sm text-gray-500 mb-2">28 Nov, 2023</p>
+            <h3 class="font-bold text-lg mb-2 hover:text-blue-600"><a href="#">How to bring the cardiology service to
+                you</a></h3>
+            <p class="text-gray-600 text-sm mb-4">Cardiology is a branch of medicine that deals with disorders of the
+              heart as well as...</p>
+            <p class="text-sm text-gray-500">By Adam Jean</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Article image" class="w-full h-48 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL-q5abU-BaF6hAS36bWVlCYSteeiBOadPKf8BXK-kuIyeu650NhytpwDBFD7avULNwhrVjqlr4cyGTCWNCX3LdZ-B6r1PUxT_71VzOlbnUboODGoDwtsKH-i_BHG53vzt9IxSRNIN3L1mqQCxyMYoN_NFEyt6-0ZRjz08RS9SiBYAqpTKoZv-P4iUAN1I-YXD2dzFt-h-8kun0sdMXYfULLLDjdhhztVroA7dMNHIgifCoPfw3G05DWVqPZ6NBODpx0z1FIL6Nr0" />
+          <div class="p-6">
+            <p class="text-sm text-gray-500 mb-2">28 Nov, 2023</p>
+            <h3 class="font-bold text-lg mb-2 hover:text-blue-600"><a href="#">What is the success rate of a root
+                canal?</a></h3>
+            <p class="text-gray-600 text-sm mb-4">A root canal is a treatment to repair and save a badly damaged or
+              infected tooth...</p>
+            <p class="text-sm text-gray-500">By Adam Jean</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="flex justify-around items-center flex-wrap gap-8">
+        <img alt="Partner logo" class="h-10"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6uZsGTL5iS17lf1q0rGZZltmX_qHBQEXut47fUtl0iRpU_aMIgHcdPYkp8pE2G83l2kYmqnVe_XEU5RGxFrueOOvUzcQ0M0cksm-WP74cWqacCN8I25p7UOs8f3npnEBPNFONGokmhDizAsPI85IvAvvyxAZ3LeEoDSqFkKPDaEsZJd-ln52LEjbXQpbBIm57bZrbVD_AX_rPSTIWc5KTEXBYog-702gKXgEmvd7Um8upylOyHmR7vkhvWmA0lQ-KaBK_egwezTE" />
+        <img alt="Partner logo" class="h-10"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXBB8ZSeSYftu9ovgO1ICjr9MMdQTPfkSqW-aWZ7uWfeVjC_vfpQ19IAD34Gx5GP18GReSXSM3luFf94S61jNE3JWcuiyDPBnaSkzqQL4wbFGTvHIAhxPugyMY8y2bblijihHDRE9l9pSzI-yrXBsYAT74Su7d2x27xAHcIIhSZfEXzOs4KWPvEGmt9fXoeuAwSAazDydGYXHKXA3YM9mRhPKyTXtKqqTAYN6fMT3zEQj85GQM5aDxeMa0B3627m2xFkEUeWC90JI" />
+        <img alt="Partner logo" class="h-10"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9MCt8sD7MKf2vgOCjoCLf3AjgZLoUYiuhduhWQzoSq-FfNrw1D03smyfFM48oe3NDaQUgKht7s-YpevoR9j07-i9gMe3Z8P0Eix9X4UcZBvlDrp1XQKC_mMTB-XhDvJXg9JzviEePnbvTHeJMsgy5xCN_ZYQNG0HPiYaGj6dUIm7uA74amGOut3xTefQ4aXg6d1snen4W7A_mikG5P5_bHcgoxrm2DQFA663q53S5vJrXQ-wjfrhSt41DgSti3LJ0FGWRuAZkacs" />
+        <img alt="Partner logo" class="h-10"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVlsZOx4obpZy-S3lYNTTgYDRzwZoLmrJTcljue45wMJ7Rzh6D-XPz3mZETqBqGmrFoXE9L2qkFR_wPNTglJyXTpOwp7JO7WEA4DvMBhbi8k1uPQJOosJOEd4J3GVGQkUt6_4uz9LXR47_JlWxXkkNwTOIJfisJ4K8DMtT5-VNtCy6fICYaUv5V90uxokAM4Tq0PK1676fhSf8SSVoKD_SfjIDqe-HL-b89gM3OsqiBkOKHRxc6SFlIcWKhMufJMg6sD7LAnmQQAM" />
+        <img alt="Partner logo" class="h-10"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp_gjn0ky1FS_3192wVcTcwP4COhi4F2cLfbpWyTkl5FQ38q6nxixKEwKBi8Iod4a-iPe3MtbDT9EUV0ARjvcqw7C-3BSoKlmd0OuWRacOmOQMg9xhZX1V6itacC1PAkGxejbAj7ZjylJB5fVV5Ktz4seU4bsxlIB663fIM3YThUNYdmtMMm17UR8qdLyG0mf-o7A40FyzDI3Gbg8qux_k9cuJ5UJHkCW2hk-wBnR8lH-RGpQoZ7Ac7vF3ZXaxThFp9r7G9C4DWZo" />
+      </div>
+    </div>
+  </section>
+  <footer class="bg-gray-900 text-white">
+    <div class="container mx-auto px-6 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Medicoz</h3>
+          <p class="text-gray-400 mb-4">We provide the most full medical services, so every person could have the
+            opportunity to receive qualitative medical help.</p>
+          <div class="flex space-x-4">
+            <a class="text-gray-400 hover:text-white" href="#"><img alt="Facebook icon" class="w-5 h-5"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBg8InvssNKyHm6eGGrJxbhQlV9V95CzSJNmWd8EoRC2Xpc1xmDtjJcbXlGBT38MQsG03Dn4AWOTO4gJ5sX4BdzU33_a1tFv-JFBeVB83V8ELp7deZARHXDjbcJ-hIQFSjYkwk7cy3O0b49lABRRUJykSYHGAQ91diDqavyW18yZzaHqUELxjVUBjiDlgOgGS0cZniQxGv6BAxjA_zE0uM_pLKa7wul1xleuqw-16NGh-iuI-8vZZUjSzAJ2tOf0dTLTjl1Kdn8I8" /></a>
+            <a class="text-gray-400 hover:text-white" href="#"><img alt="Twitter icon" class="w-5 h-5"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMDnbQVTyzrFMKbPakJWDH99E8L2yCfTKVr1PWavQ53dGodZZaP1hCxlXoAzHq_iistYe6ekPFWyM6YhrQlnnYK19OW9_NVCVjmaPxa3i1MA4A1X8UhLVdtiS8pOSonLGkEKnGlFWf00KNiowilImZZv5XGhcnSTphBawfC7yyaCTtji6oE0hZxqEhbSIHzR9Jh-wUeQsS1Uepoh09QVQ0uttQxm8Uv2enELZLevjoJ0-9V0kQ1wIs-7vpeiwhP6M8-09xWGXuGZI" /></a>
+            <a class="text-gray-400 hover:text-white" href="#"><img alt="LinkedIn icon" class="w-5 h-5"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5KeikqgeLXtaoL_fCgzO9MBw-HxR2AxouLz9deDeHle3GaeF1ezcsnVEi9gKzeFwAiIk1Y1J4dssbqsOR6xjYZH9oyd97Jytj124WPxB0ecwX_1N7OutLnbh4zBk_5L-T2K3IUvKXSwlcZzI0C7QAvdBAYaTdAagXTN2bHrQJARDUvc67leEyT8K0-rSR_mH19ZD8HrayvWniB_IJrHRVhbaBm_3J1kfNFjaL5GzrdL2VWLFVe4tJ2wNVSML1UCk2-mGUrsVd7fw" /></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Departments</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a class="hover:text-white" href="#">Surgery and Radiology</a></li>
+            <li><a class="hover:text-white" href="#">Family Medicine</a></li>
+            <li><a class="hover:text-white" href="#">Women's Health</a></li>
+            <li><a class="hover:text-white" href="#">Optician</a></li>
+            <li><a class="hover:text-white" href="#">Pediatrics</a></li>
+            <li><a class="hover:text-white" href="#">Dermatology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Latest News</h4>
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <img alt="News thumbnail" class="w-16 h-16 rounded-md object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuACYK9xgJr8Oj6DodlP58HLYbx2k_JSq87ojCr08k-6JWH1jBL-cT4dF-m52B7JwZPvcf_CsqRIn-tuH0dthSIYKP-T4T4c9Li_4uwkh7W5w1ppx8zYDLE_g2kVBd_vm4Ds4eUaiqtfKbzGHKWKVv883RUmiAAqEzKJWOQ41-yURIS8ME1t71HMlLjyuqf61JjTgHnKb_DBZOKDEM6zlOR2zhrvzAVF_srcV76uF6HgLXrvD3qYYYmqy-GZjIV6XuEblcJ_mBJbHtc" />
+              <div>
+                <h5 class="hover:text-blue-400"><a href="#">In this situation, the photographer is not...</a></h5>
+                <p class="text-sm text-gray-500">Jan 18, 2023</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-3">
+              <img alt="News thumbnail" class="w-16 h-16 rounded-md object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJcQ8MGRkqUAfuNPUT4StolTHDnx7DqYYAWzqqiYIC2F1AZ2Iu-YkErT6JZIqNMjB1KQAEcFswTBPn3lX1odM-euhF7QCIx3QTGSPDFKlkkI1nHQx-kthyLZk0BvT4J0MMDoo6ZS9II7jjcfytnODHSWpIuaMQ6zAMmtLSWiZHS27dY90sYOadLwNAEM9xbyOKlVv6rjvAmqPUAGV6P5nuMX36FDjy39kcY2XiQGK14i29ruWHlGCAwXwc1mH6QKwPQLcyfXNuJ2U" />
+              <div>
+                <h5 class="hover:text-blue-400"><a href="#">In this situation, the photographer is not...</a></h5>
+                <p class="text-sm text-gray-500">Jan 18, 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-start space-x-3"><span class="material-icons mt-1">location_on</span><span>241 Union,
+                Los Angeles, California, US</span></li>
+            <li class="flex items-start space-x-3"><span class="material-icons mt-1">phone</span><span>(0080)
+                123-453-789</span></li>
+            <li class="flex items-start space-x-3"><span
+                class="material-icons mt-1">email</span><span>contact@medicoz.com</span></li>
+            <li class="flex items-start space-x-3"><span class="material-icons mt-1">schedule</span><span>Opening Hours:
+                8:00am - 6:00pm</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800 py-4">
+      <div class="container mx-auto px-6 flex justify-between items-center text-sm text-gray-400">
+        <p>© 2023 Medicoz. All Rights Reserved.</p>
+        <div class="space-x-4">
+          <a class="hover:text-white" href="#">Privacy Policy</a>
+          <a class="hover:text-white" href="#">Terms</a>
+          <a class="hover:text-white" href="#">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

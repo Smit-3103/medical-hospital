@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hospital Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <div class="main-header"></div>
+    <header class="bg-white py-4 px-4 sm:px-6 lg:px-8 shadow-sm fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold text-blue-600">Hospital logo</div>
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a class="text-gray-600 hover:text-blue-600" href="#">Home</a>
+                <a class="text-gray-600 hover:text-blue-600 flex items-center" href="#">Services <span
+                        class="material-icons text-sm">expand_more</span></a>
+                <a class="text-gray-600 hover:text-blue-600" href="#">Doctors</a>
+                <a class="text-gray-600 hover:text-blue-600" href="#">About us</a>
+                <a class="text-gray-600 hover:text-blue-600" href="#">Contact us</a>
+            </nav>
+            <div class="hidden lg:flex items-center space-x-4">
+                <a class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700" href="#">Sign in</a>
+                <a class="px-6 py-2 border border-gray-300 text-gray-600 rounded-md hover:bg-gray-100" href="#">Sign
+                    up</a>
+            </div>
+            <button class="lg:hidden text-gray-600">
+                <span class="material-icons">menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="pt-24 lg:pt-32">
+        <section class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-800 leading-tight">We care about your health
+                    </h1>
+                    <p class="mt-4 text-gray-600">Good health is the state of mental, physical and social well being and
+                        it does not just mean absence of diseases.</p>
+                    <div
+                        class="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button
+                            class="w-full sm:w-auto px-8 py-3 bg-blue-600 text-white rounded-lg flex items-center justify-center font-semibold hover:bg-blue-700">
+                            Book an appointment <span class="material-icons ml-2">arrow_forward</span>
+                        </button>
+                        <button class="w-full sm:w-auto flex items-center justify-center text-gray-600 font-semibold">
+                            <span class="material-icons mr-2 text-blue-600 text-4xl">play_circle</span> Watch videos
+                        </button>
+                    </div>
+                    <p class="mt-6 text-sm text-gray-500">Become member of our hospital community? <a
+                            class="text-blue-600 font-semibold" href="#">Sign up</a></p>
+                </div>
+                <div class="lg:w-1/2 mt-10 lg:mt-0 relative">
+                    <div class="relative w-full max-w-md mx-auto">
+                        <div class="absolute inset-0 bg-blue-100 rounded-full transform -translate-x-4 -translate-y-4">
+                        </div>
+                        <div class="absolute inset-0 bg-blue-500 rounded-full transform scale-90"></div>
+                        <img alt="Two smiling doctors, one male and one female"
+                            class="relative z-10 w-full h-auto rounded-full"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNqQBXsCuS6j2IkpjbCwCPnFkE3CS4uvmPbE-m-1EwQlKaZljktS1RKJhyn84FBhXKYJLWnDomI9emCl50164poTP9oj8sMoPghhCXCSsYapDcXhao63oII_YlCpnoP7qp-TOmZSv9FqYh-Ra6JSa9OW5jtnVTM0B2aEwd4TvWIrLv9ZxvtGve4VbBeo19ojq9Yl-aAkqIV7-sxVjSCqVMFaHd4vmhCt3oWrgARRbFDgdEvtaAgrEbPbjFkPVCTagVsA44bEaeVcA" />
+                        <div class="absolute top-1/4 -left-10 bg-white/5 backdrop-blur-md border border-white/20 p-3 rounded-lg shadow-lg flex items-center z-20">
+  <span class="material-icons text-blue-500 mr-2">search</span>
+  <p class="text-sm font-semibold text-black">Well Qualified doctors</p>
+</div>
+<!-- Book Appointment (more transparent) -->
+<div
+  class="absolute top-1/2 -left-1/4 transform -translate-y-1/2 bg-white/5 backdrop-blur-md border border-white/20 p-3 rounded-lg shadow-lg flex items-center z-20">
+  <span class="material-icons text-blue-500 mr-2">calendar_today</span>
+  <div>
+    <p class="text-sm font-semibold text-black">Book an appointment</p>
+    <p class="text-xs text-black/70">Online Appointment</p>
+  </div>
+</div>
+
+<!-- Emergency (more transparent) -->
+<div
+  class="absolute bottom-1/4 -right-12 bg-white/2 backdrop-blur-md border border-white/20 p-3 rounded-lg shadow-lg flex items-center z-20">
+  <span class="material-icons text-blue-500 mr-2">call</span>
+  <div>
+    <p class="text-sm font-semibold text-black">Emergency</p>
+    <p class="text-xs text-black/70">+1 234 567 890</p>
+  </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="font-semibold text-gray-700 mb-4">Find a doctor</p>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+                    <input class="p-3 border border-gray-200 rounded-lg bg-gray-50 col-span-1"
+                        placeholder="Name of Doctor" type="text" />
+                    <input class="p-3 border border-gray-200 rounded-lg bg-gray-50 col-span-1" placeholder="Speciality"
+                        type="text" />
+                    <div class="flex items-center space-x-2 col-span-1">
+                        <span class="text-gray-600">Availability</span>
+                        <div
+                            class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+                            <input checked=""
+                                class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+                                id="toggle" name="toggle" type="checkbox" />
+                            <label
+                                class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
+                                for="toggle"></label>
+                        </div>
+                        <style>
+                            .toggle-checkbox:checked {
+                                right: 0;
+                                border-color: #4f46e5;
+                            }
+
+                            .toggle-checkbox:checked+.toggle-label {
+                                background-color: #4f46e5;
+                            }
+                        </style>
+                    </div>
+                    <button
+                        class="bg-blue-600 text-white p-3 rounded-lg font-semibold hover:bg-blue-700 col-span-1">Search</button>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-gray-50 mt-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-800">Our Medical Services</h2>
+                <p class="mt-2 text-gray-600">We are dedicated to serve you best medical services</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow">
+                        <div class="p-4 bg-gray-100 rounded-lg">
+                            <span class="material-icons text-4xl text-blue-600">science</span>
+                        </div>
+                        <h3 class="font-semibold mt-4">Well equipped lab</h3>
+                    </div>
+                    <div
+                        class="bg-blue-600 text-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow">
+                        <div class="p-4 bg-blue-700 rounded-lg">
+                            <span class="material-icons text-4xl">local_hospital</span>
+                        </div>
+                        <h3 class="font-semibold mt-4">Emergency Ambulance</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow">
+                        <div class="p-4 bg-gray-100 rounded-lg">
+                            <span class="material-icons text-4xl text-blue-600">medication</span>
+                        </div>
+                        <h3 class="font-semibold mt-4">Online Appointment</h3>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow">
+                        <div class="p-4 bg-gray-100 rounded-lg">
+                            <span class="material-icons text-4xl text-blue-600">support_agent</span>
+                        </div>
+                        <h3 class="font-semibold mt-4">Call Center</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-800">Meet our Doctors</h2>
+                <p class="mt-2 text-gray-600">Well, qualified doctors are ready to serve you</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                        <div class="bg-blue-600 text-white p-4 rounded-lg">
+                            <img alt="Dr. Robert Henry, Cardiologist"
+                                class="w-32 h-32 rounded-full mx-auto border-4 border-white"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_Jv--5o8jRxGq3YurB9y7tYJXOrvwZX_qE4jDiQLkA9i-VsKnkwbL91VqivHwM5llkJUKhchI-I_a5PdVAzHSdoZ16mvnVKnkGNh7ss2IGTPJzUi-D1u8C_XenVpAF6xCKHgzF0lxzSdiAWzEuvwnrDUbwfhiGJdf0EeYwpMjH4NZSd-dj2r6ElHzn2wHFrx9fk5dB207qG1R9Y7Ed82gNc4ihS1cU1AlEN3m1I8rceN5GVfl8BVlLtAE1j5e2cEl3CWEN3dM31Q" />
+                            <h3 class="font-bold text-lg mt-4">Dr. Robert Henry</h3>
+                            <p class="text-sm">Cardiologist</p>
+                            <div class="flex justify-center mt-2">
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-gray-300">star_border</span>
+                                <span class="text-sm ml-1">(122)</span>
+                            </div>
+                        </div>
+                        <button
+                            class="mt-4 w-full py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50">Book
+                            an Appointment</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                        <div class="bg-blue-600 text-white p-4 rounded-lg">
+                            <img alt="Dr. Harry Littleton, Neurologist"
+                                class="w-32 h-32 rounded-full mx-auto border-4 border-white"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2RUgItN8E_HhMH8fuBJjzKgqPxMCl4VJ1NatsTDzyLfdIoQVmQ23eaaMoZHiOmhEqU9JoB5k_VVFqmp9vZ8CAVBZgcqVVxQW6QNUUhRlANbLViycpxfbLpmQd3yt3v_RC_qjBwUyqwp9JQIuWhxCzWYWnXQsofMrQKrbLvGViKSWb202mgYF7-Y6mKbWiTpalPQzRYLa4cRABurWTnnrDw1nve2ALlT7Sml8WJqgbGnSj9Rp1pa6vcpXKKblIKPoyS31shsbDsOk" />
+                            <h3 class="font-bold text-lg mt-4">Dr. Harry Littleton</h3>
+                            <p class="text-sm">Neurologist</p>
+                            <div class="flex justify-center mt-2">
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star_half</span>
+                                <span class="text-sm ml-1">(57)</span>
+                            </div>
+                        </div>
+                        <button
+                            class="mt-4 w-full py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50">Book
+                            an Appointment</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                        <div class="bg-blue-600 text-white p-4 rounded-lg">
+                            <img alt="Dr. Sharika Khan, Gynecologist"
+                                class="w-32 h-32 rounded-full mx-auto border-4 border-white object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKt1bSQG5h9e2hjUUmkxGf-qsBLEyDAxLwE2fciEeYvSxnZdapFIWfK_MY11QWt72Bc49MJX3dMbUN75pJ-DY1oifsqjTULYG88fW-XT0oQ9sSxQDdHDbwjdCcziLbeBk48W0cJKSohAbj0Pm6sXNF2FjQjg5T2KgyvbgI1x1hhsxQQApylPRUIUx09qOiloq-c4FPtiDN9GcZ8waWpKMBld3d8bl4uwIJrrZbHE_XhOa6bCHP3LrIgdWdoOn-SnpGSudRbKHigbo" />
+                            <h3 class="font-bold text-lg mt-4">Dr. Sharika Khan</h3>
+                            <p class="text-sm">Gynecologist</p>
+                            <div class="flex justify-center mt-2">
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-gray-300">star_border</span>
+                                <span class="text-sm ml-1">(46)</span>
+                            </div>
+                        </div>
+                        <button
+                            class="mt-4 w-full py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50">Book
+                            an Appointment</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                        <div class="bg-blue-600 text-white p-4 rounded-lg">
+                            <img alt="Dr. Sanjeev Kapoor, Child Specialist"
+                                class="w-32 h-32 rounded-full mx-auto border-4 border-white"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXlodkhz8f3MzEyrV295mBnbgBnvMG8JOm7FXuCCBSRz9IW9WSwXCEhL35-bvpMhgwIzz29orZkAwgYVxUVGUmApX_tQ7w3uPIhOYJrwhNU_y1yhMvS1M622Y-urK6TvAs3LV-NrfIAaY2HrU0Fva1OH1HKiTo3aI55ADFzjCAjNi7H-2VNH39hOh-qKgHvjIFlH1eDqlIx3MFrNvUzvaS6uvroM-xmSkLQQsWsDRFBnZ_FXkabIlTsF-UGM18qD9v-VODaeaADhI" />
+                            <h3 class="font-bold text-lg mt-4">Dr. Sanjeev Kapoor</h3>
+                            <p class="text-sm">Child Specialist</p>
+                            <div class="flex justify-center mt-2">
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="material-icons text-yellow-400">star</span>
+                                <span class="text-sm ml-1">(79)</span>
+                            </div>
+                        </div>
+                        <button
+                            class="mt-4 w-full py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50">Book
+                            an Appointment</button>
+                    </div>
+                </div>
+                <button class="mt-12 px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700">See
+                    more</button>
+            </div>
+        </section>
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <img alt="Modern hospital building exterior" class="rounded-lg shadow-lg w-full"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYflDzy8Y0TBHM-plg3n8bYUijqgClXIMg7rWa8MGiDUXJDuKeeggzvpIKvFuaegjnOIqhr6qFDhwzLpBgOGRovPbsCBEEonuzA8GdEE5ITNOvl9Y2quBp-DTASQ12SrVGJGfvWFgPMn_cf9lgLI64ngB2zKIz9Q7P990iRfh5SJtv4PiA_Q4lhhZa_44j6d_tAU0yM6oTG7h6ddYPpmGVsKFD_JqPfL5AuDIFzJkRa8bGI4tB830-CGdDI4yOXwRrofFjRnJ2p4g" />
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl font-bold text-gray-800">About Our Hospital</h2>
+                        <p class="mt-4 text-gray-600">We are a leading healthcare provider, dedicated to providing the
+                            highest quality of care to our patients. Our state-of-the-art facility is equipped with the
+                            latest technology and staffed by a team of highly skilled and compassionate medical
+                            professionals.</p>
+                        <p class="mt-4 text-gray-600">Our mission is to improve the health and well-being of the
+                            communities we serve through excellence in patient care, education, and research.</p>
+                        <button
+                            class="mt-8 px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-800">Contact Us</h2>
+                <p class="mt-2 text-gray-600">We are here to help. Reach out to us for any inquiries.</p>
+                <div class="mt-12 max-w-lg mx-auto">
+                    <form class="space-y-6">
+                        <input class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Your Name"
+                            type="text" />
+                        <input class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Your Email"
+                            type="email" />
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Your Message"
+                            rows="5"></textarea>
+                        <button class="w-full py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700"
+                            type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Patients Testimonial</h2>
+                    <p class="text-gray-500 mt-2">Let's see what our happy patients says</p>
+                </div>
+                <div class="relative">
+                    <div
+                        class="flex items-center justify-center space-x-0 md:space-x-8 overflow-x-auto snap-x snap-mandatory pb-8 no-scrollbar">
+                        <div class="snap-center shrink-0 w-full md:w-auto">
+                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 w-full md:w-80">
+                                <div class="flex items-center space-x-4">
+                                    <img alt="Patient photo" class="w-16 h-16 rounded-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKLFIYOBx-oN3hwEKZq1LnL9QsFaEL5SS5eivEB_hqPhiCxIsks2xI6RE9uQ5Rms7JuyD5V3ckDXhXzal5a_rDpEF5opAOaSsbRqdreXNMdKqs-7IzGQvrPNbxltp7o49USZOtY9k8sFl_U9Qn979v5OYUiQZV-jMyVGu10W9UhELvly-Yp2NeaP_5oxCBLLfuQkSXZ2RRKi_hTdH_3inpA5-CaPlnX4x-SYVGpIxy3UiQeKJkH6tcze8SxbAfGf9Cl3NgdFxTv54" />
+                                    <div>
+                                        <h4 class="font-semibold">Sami Ali Khan</h4>
+                                        <div class="flex text-yellow-400">
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star_half</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-500 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="snap-center shrink-0 w-full md:w-auto">
+                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 w-full md:w-80">
+                                <div class="flex items-center space-x-4">
+                                    <img alt="Patient photo" class="w-16 h-16 rounded-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9RL7soU7UGXGhUwNXxsrd2xH_NFXYQtmmKYjIbN66l0_7C-nEYiwDPzKkcY4iOlWAw9tzuWTeY4nM76eJAdvUd6TBqv-Ebn5JlM2YG-rwO0sdw6zIaIhKUgT_dyWNTT5tSHVsnpvvauwhAWINF2c205NcFaKotQRZbS2dmoTzBj7lhsZFkmhJtZPcj3jrCgDTQzTlwo9MVM0pLYFRrNFYa3XAwatjprfQ9I5pS2K4FMnxMYinrua7EOx6ZwZ0bv-UotneVq_vLTk" />
+                                    <div>
+                                        <h4 class="font-semibold">Rimon Hajett</h4>
+                                        <div class="flex text-yellow-400">
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-500 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="snap-center shrink-0 w-full md:w-auto">
+                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 w-full md:w-80">
+                                <div class="flex items-center space-x-4">
+                                    <img alt="Patient photo" class="w-16 h-16 rounded-full"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9txeY-0ExrhH0BaR9G0VBdpqozl8eW8tadqwqVUmTKERuaNi2H53SD7BY-KLIIOYO1d61XfP4a2Jcw0zUeGYL4NR0XDkIBDz13OlmU4UArKyUR7TAI6EREFo17wgWVdnbJk1lVXbq4KO4TpBlOItrgQ1lNE3AINqhft36enWhE24v0LS7X9IZmfMg9X4xyMqrV6Wn47oD7agFv5Gn6_ncilmsFgCfc6FxGT16zM_QQqySCd-1mkwiYNQ17gM_lbQSxaE0roLE6GM" />
+                                    <div>
+                                        <h4 class="font-semibold">Sami Ali Khan</h4>
+                                        <div class="flex text-yellow-400">
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star</span>
+                                            <span class="material-icons text-sm">star_border</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-500 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="absolute top-1/2 left-0 -translate-y-1/2 bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center shadow-md">
+                        <span class="material-icons">chevron_left</span>
+                    </button>
+                    <button
+                        class="absolute top-1/2 right-0 -translate-y-1/2 bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center shadow-md">
+                        <span class="material-icons">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-50 py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Our Latest Articles</h2>
+                    <p class="text-gray-500 mt-2">Check out our latest articles</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <img alt="Woman doing yoga with a ball" class="w-full h-64 object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK8qm5RI9-UzhXDPO4hMD1rp-bo9WeNFWL7zaCnbPmYSJ3-rZwwAuuc-Yt8Qj3waIH86TAYSbpYe4G39fGE0os4zPaVC5HFg_iyUk7Jhwg78kMe_SaDzWt1ed2MPVJI7-v2MXRmwxwEGmwKwP4_ggsUU64cxcNVQQ0GDaPXpLgg3z5YVzf3dmJVXTaN7k1dIb1UhtLS3wVYBLy2aQS9YY-9flqRw3d3GBC5Ca0-KVwNDjABcVmDdl6k4kogtvJtWYLmnZleoHTYZI" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Card Title</h3>
+                            <p class="text-gray-600 mb-4">Card description. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sit rhoncus imperdiet elit.</p>
+                            <a class="text-indigo-600 font-semibold hover:underline" href="#">See more</a>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex items-center">
+                            <img alt="Orange fruit" class="w-40 h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRWs467uQPHrgSzm5PzgbCTzcZQbG9lY7Nlr2ff0iHgZKfmeDbm0hiZYZrdgoVRKytVbwfs8fsdojrxpxo5v6TUvQ0Qu5HIMGvZjHqZlHQ6L9AHXvUFJRMEYausqbGLmsmL_YjpaIe7QJH3yHfIfXnP602as72nRIjmimZZOF5u3zPNiOMvbahrqCcpCwrqZheMWXx0Em1eAUFleDRo_6UfYAhQLzCAbZtFkbxkoXPTFTrsKAju_oadwXS23lYhWAHYZyXBd4oMS4" />
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Card Title</h3>
+                                <p class="text-gray-600 mb-2 text-sm">Card description. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Sit rhoncus imperdiet elit.</p>
+                                <a class="text-indigo-600 font-semibold hover:underline text-sm" href="#">See more</a>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex items-center">
+                            <img alt="A doctor holding a blood pressure monitor" class="w-40 h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbHUR3UkfcGYV907grlsfqNcq-ZXOy6wJoyZzgps9Gcao5-1GomstXFDmUHu2QB5vkcw_d4k4ur-EuaV0IhqcE_HLD8IuyzcFFuqFcdp_6woN6Sdux9KdAGxomNYddtiUVCXW4daZkEIvHqP7rX6QwKrIvfKmbka8W1hQWJiefjhJB5f2KDmgkx_FMBqspnWtPwnsqmTSgVfKHdoehbLYQvc4hVM5qzFTXGwXNWZ33NFnGQX0SuudLPCE9wxdmaW7GIUF42x_NR-s" />
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Card Title</h3>
+                                <p class="text-gray-600 mb-2 text-sm">Card description. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Sit rhoncus imperdiet elit.</p>
+                                <a class="text-indigo-600 font-semibold hover:underline text-sm" href="#">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-bold">Subscribe To Our Newsletter</h2>
+                    <p class="text-gray-500 mt-2">Get latest news of our hospital</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-gray-100 rounded-2xl p-4 sm:p-6 lg:p-8">
+                    <form class="flex flex-col sm:flex-row items-center gap-4">
+                        <label class="sr-only" for="newsletter">For Newsletter</label>
+                        <input
+                            class="w-full bg-white px-6 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            id="newsletter" placeholder="Enter your email here" type="email" />
+                        <button
+                            class="w-full sm:w-auto bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300"
+                            type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-50 pt-16 md:pt-24 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">Hospital Logo</h3>
+                    <p class="text-gray-600">Card description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sit rhoncus imperdiet elit. Vivamus imperdiet, dui et imperdiet.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Card Title</h4>
+                    <ul class="space-y-2">
+                        <li><a class="text-gray-600 hover:text-indigo-600" href="#">Card title</a></li>
+                        <li><a class="text-gray-600 hover:text-indigo-600" href="#">Card title</a></li>
+                        <li><a class="text-gray-600 hover:text-indigo-600" href="#">Card title</a></li>
+                        <li><a class="text-gray-600 hover:text-indigo-600" href="#">Card title</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Card Title</h4>
+                    <ul class="space-y-2">
+                        <li><a class="text-gray-600 hover:text-indigo-600" href="#">Card title</a></li>
+                        <li><a class="text-gray-600 hover:text-indigo-600" href="#">Card title</a></li>
+                        <li><a class="text-gray-600 hover:text-indigo-600" href="#">Card title</a></li>
+                        <li><a class="text-gray-600 hover:text-indigo-600" href="#">Card title</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a class="text-gray-600 hover:text-indigo-600" href="#">
+                            <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path clip-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a class="text-gray-600 hover:text-indigo-600" href="#">
+                            <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-gray-600 hover:text-indigo-600" href="#">
+                            <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path clip-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.327 12.016c-.722.417-1.54.802-2.382 1.139a.53.53 0 01-.63-.299c-.19-.413-.37-.83-.56-1.242a.5.5 0 01.12-.558c.42-.317.81-.664 1.19-.999.64-.56 1.25-1.16 1.81-1.79.1-.11.09-.28-.02-.38-1.04-.99-2.2-1.74-3.52-2.28a.53.53 0 00-.5.06c-1.3.69-2.37 1.63-3.2 2.76-.12.17-.03.4.15.48.51.23.99.52 1.48.79.1.06.23.03.3-.06.29-.38.6-.74.9-1.11a.49.49 0 01.75-.15c.42.29.82.6 1.2.93.12.1.1.28-.02.39-.63.56-1.29 1.09-1.97 1.58a.53.53 0 00-.22.46c-.03.49-.07.98-.1 1.47a.52.52 0 00.52.53c.48-.02.96-.05 1.44-.09a.53.53 0 00.51-.4c.19-.48.39-.96.58-1.44.06-.15.25-.17.36-.06.84.77 1.83 1.39 2.88 1.9a.53.53 0 01.32.73c-.19.49-.4 1-.6 1.49a.53.53 0 01-.76.35z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-200 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 Hospital. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

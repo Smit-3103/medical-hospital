@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hospital Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <div class="main-header"></div>
+    
+    <header class="bg-white">
+        <div class="bg-gray-100 py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center text-sm text-gray-600">
+                <p>Emergency: (237) 681-812-255</p>
+                <div class="flex items-center space-x-4">
+                    <a class="hover:text-blue-500" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="hover:text-blue-500" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="hover:text-blue-500" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img alt="Hospital logo" class="h-10 mr-4"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Fm3c_AORpdwveyBMQpGrqXULAJFs-749TlG_TyiM76CNF9iGFMMklt7fh2GQVxAaDvtAk5VjpZOoCvYFCL6tO_qBizlDvavS8kE7PBGai3sHNKR1oC8a7UHEeFw85s05O5ISw0bf_9-uL_vmT8R6yBsY14AlLF3b5vNLZLmOuemTSDsRpYubsRRBAdq6qw64G1NWaib_yOt--WWuyFhMMK55EwKXBWMY8xoLBWQk778PN0zjyHxCjKwQXywCSAA_6yb7hEjYHkQ" />
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm">
+                <div class="flex items-center space-x-2">
+                    <i class="material-icons text-blue-500">phone</i>
+                    <div>
+                        <p class="font-semibold">CALL US TODAY</p>
+                        <p class="text-gray-500">(237) 681-812-255</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="material-icons text-blue-500">location_on</i>
+                    <div>
+                        <p class="font-semibold">OUR LOCATION</p>
+                        <p class="text-gray-500">05 Madison Ave, Broklyn</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="material-icons text-blue-500">schedule</i>
+                    <div>
+                        <p class="font-semibold">WORK HOURS</p>
+                        <p class="text-gray-500">Mon-sat 09:00-17:00</p>
+                    </div>
+                </div>
+            </div>
+            <a class="bg-green-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-green-600 transition-colors"
+                href="#">Buy now</a>
+        </div>
+        <nav class="bg-white shadow-md">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <ul class="flex space-x-8 py-4 text-gray-700">
+                    <li><a class="font-semibold text-blue-500 border-b-2 border-blue-500 pb-4" href="#">Home</a></li>
+                    <li><a class="hover:text-blue-500 transition-colors" href="#">About Us</a></li>
+                    <li><a class="hover:text-blue-500 transition-colors" href="#">Departments</a></li>
+                    <li><a class="hover:text-blue-500 transition-colors" href="#">Time Table</a></li>
+                    <li><a class="hover:text-blue-500 transition-colors" href="#">News</a></li>
+                    <li><a class="hover:text-blue-500 transition-colors" href="#">Shop</a></li>
+                    <li><a class="hover:text-blue-500 transition-colors" href="#">Contact Us</a></li>
+                </ul>
+                <a class="bg-blue-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-600 transition-colors"
+                    href="#">For Consultation</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="relative bg-cover bg-center h-[600px]"
+            style="background-image: url('./public/images/home_banner_image_1.jpg'); background-blend-mode: multiply; background-color: rgba(200, 220, 255, 0.5);">
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-white to-transparent"></div>
+            <div class="container mx-auto px-4 flex items-center h-full relative">
+                <div class="w-full md:w-1/2 lg:w-1/3 p-8 bg-white/90 rounded-lg shadow-lg">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Hospitals providing total health care solutions
+                        for anyone.</h1>
+                    <p class="text-gray-600 mb-6">We're always available for our Patients with emergent problems. You
+                        can easily reach us 24/7. We focused on highest quality.</p>
+                    <div class="flex space-x-4">
+                        <a class="bg-blue-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-600 transition-colors"
+                            href="#">Read More</a>
+                        <a class="bg-gray-200 text-gray-800 px-6 py-3 rounded-md font-semibold hover:bg-gray-300 transition-colors"
+                            href="#">Departments</a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-600 cursor-pointer">
+                <i class="material-icons text-4xl">chevron_left</i>
+            </div>
+            <div class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-600 cursor-pointer">
+                <i class="material-icons text-4xl">chevron_right</i>
+            </div>
+        </section>
+        <section class="bg-blue-500 py-6">
+            <div class="container mx-auto px-4">
+                <form class="grid grid-cols-1 md:grid-cols-6 gap-4 items-center">
+                    <h3 class="text-white font-semibold text-lg col-span-1">Make an Appointment</h3>
+                    <input
+                        class="col-span-1 bg-white/20 border-none rounded-md px-4 py-3 text-white placeholder-white/80 focus:ring-2 focus:ring-white"
+                        placeholder="Your Name" type="text" />
+                    <select
+                        class="col-span-1 bg-white/20 border-none rounded-md px-4 py-3 text-white placeholder-white/80 focus:ring-2 focus:ring-white">
+                        <option>Select Department</option>
+                    </select>
+                    <select
+                        class="col-span-1 bg-white/20 border-none rounded-md px-4 py-3 text-white placeholder-white/80 focus:ring-2 focus:ring-white">
+                        <option>Select Doctor</option>
+                    </select>
+                    <input
+                        class="col-span-1 bg-white/20 border-none rounded-md px-4 py-3 text-white/80 focus:ring-2 focus:ring-white"
+                        type="date" />
+                    <button
+                        class="bg-white text-blue-500 rounded-md p-3 flex justify-center items-center hover:bg-gray-100 transition-colors"
+                        type="submit">
+                        <i class="material-icons">arrow_forward</i>
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Medical Departments</h2>
+                <div class="flex justify-center mb-12">
+                    <div class="w-16 h-1 bg-blue-500"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+                        <img alt="Pulmonology icon" class="mx-auto mb-4 h-16"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp1rtkq67h1laLSBciSZN4oTtSuf5SlUU45n2ecoNNrJxW-0giwrYFbdHnLYdFC7QXlUcg0zy9Z96xq9Fqm1aEdQmX6QpaWJXgAzhOPHu8rYIV0mxkrh3OpGCIAFdQyXIRpA5MbXYChuPwO6pSDZO_fT1MnIUmu3HReTxEQHi19FYRN2xsPMp-fI3Zdd1gtK0y5m96WnnQ4gG039dEtwg7BUm-CPQKGBN38kiQiaG0xjzuTRqY8Y7tXk5Frvo7TZYmxNNfs3WnIVc" />
+                        <h3 class="text-xl font-semibold mb-2">Pulmonology</h3>
+                        <p class="text-gray-600 mb-4">We provide a wide range of services for diagnosis and treatment of
+                            lung diseases.</p>
+                        <a class="text-blue-500 font-semibold hover:underline" href="#">READ MORE</a>
+                    </div>
+                    <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+                        <img alt="Gynecology icon" class="mx-auto mb-4 h-16"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ9BAC_3BBEd8lyWcDv3k9a2m8b2GXJuhJ_F_ADVODhK8lBl2UQkQc1oSUHCZQqNqOj4m_-TukWvCby_kdM1cjCCAT3kTG5ddLl7Es991LTfKieVwNIeN3FodYJb5V29rnuge0Z-UiH1o8XSG76m-tt85kyl2G43_QqG1dGtTWWWC7unmIttxm8k8VwHfJSM5yH4pHQWGuOg1-9uCOyvH689Bx-QPBNlA93Lr1K-zZExS5_RUaBCU5ZOXjiYkzjLl1YRbVSaEPCfA" />
+                        <h3 class="text-xl font-semibold mb-2">Gynecology</h3>
+                        <p class="text-gray-600 mb-4">We have the best specialists and equipment to diagnose and treat
+                            diseases of the female reproductive system.</p>
+                        <a class="text-blue-500 font-semibold hover:underline" href="#">READ MORE</a>
+                    </div>
+                    <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+                        <img alt="Neurology icon" class="mx-auto mb-4 h-16"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHVZFXWGxfGlNlfNx58im5F5AQ1r4ZdoCDHygW4BTZUwfHygpl7byajq2inS7NtsxJlRn697aMpfEDIL3PhfIDIM9KKLvQIF4sD9xMyWT770OiQa3gjwfrC9c_i0P5kMPCQHmy5wC_2xImsjGh9ms-Lf-WkEvq2Inc9X0_tajcGBZq1VPdHiDAmji6cTCMnqNyd8cWibbLugo7xPYV7Wv3lNA2J7jSdFSy0QxBZEK1vUxo63Pr12Keu9NjgHLAZ43RGUtKHgjCWqw" />
+                        <h3 class="text-xl font-semibold mb-2">Neurology</h3>
+                        <p class="text-gray-600 mb-4">Our neurologists are highly trained to treat disorders of the
+                            nervous system.</p>
+                        <a class="text-blue-500 font-semibold hover:underline" href="#">READ MORE</a>
+                    </div>
+                    <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+                        <img alt="Cardiology icon" class="mx-auto mb-4 h-16"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX5CO_9ARYdxRBmFOjD01oimB1Nm49ILYnYY28GM-CKs8g8NtDpXXCDidW2lCLPx-UTP0FbCipfBAnFx8la95ErCW-u9U_h3NcmEHxMgXG_OzR8oZfUID_-6mJSK1a5MwOQMX1aSEHsa4tMnjq3CRUeh0zs_ALguJ05Oisa9YvtbvkWHohZMN92uZzW7aLbOBuQvcFTYsNNDFFmTkaqXyqYKT9zTStG_DhKmY2OhpLj8ZDCHOx_n2NlQPlYBTlA_rfOcnb_QUGf3Q" />
+                        <h3 class="text-xl font-semibold mb-2">Cardiology</h3>
+                        <p class="text-gray-600 mb-4">Our cardiology department provides the best care for patients with
+                            heart diseases.</p>
+                        <a class="text-blue-500 font-semibold hover:underline" href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Best Services</h2>
+                    <p class="text-blue-500 font-semibold">Laboratory Analysis</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-1/4">
+                        <img alt="Doctor examining patient" class="rounded-lg shadow-lg w-full"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8o7WCI61y2Ho_hunBGCZ4tSbCV_5Et0t3VuXsT3OlZ0WNvy-LXTpU55NQEuoKtJl5UQeqDiyv7aR1TRtjhpopdtPZMc2gHHGwnpvIyckF2QP8TZeHDBzCi5sfVtuk4KtflgALmwDIK1aY0KJeR0we60cvoUkj7ugNL3_ZM9iM_ga4lhh4mRidqt1urp-C-a7th4ahu3LyykSNbZ6-vGY_NRhwQ2Rnvrzkjgnzo3JUR6K-Ik8JBqOBnlO8U_xz0pRtKOYc0ZQ5ZeE" />
+                    </div>
+                    <div class="w-full md:w-1/2 text-center md:text-left">
+                        <p class="text-gray-600 mb-6">We provide a wide range of services for diagnosis and treatment of
+                            lung diseases. We have the best specialists and equipment to diagnose and treat diseases of
+                            the female reproductive system. Our neurologists are highly trained to treat disorders of
+                            the nervous system.</p>
+                        <a class="bg-blue-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-600 transition-colors"
+                            href="#">Read More</a>
+                    </div>
+                    <div class="w-full md:w-1/4">
+                        <img alt="Scientist in a lab" class="rounded-lg shadow-lg w-full"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiVk4s0MnleksP9coQKU658XDp-TM5BCGLZdOaFeGogkMG7GTXun9syHlArg-2OD0DUuSJ4v-xlBFI70h5Aq9c2dfyYUNdNhvGVm9Y4xrDdExqC7dSRZgB_qFSo4Hrmy9XMX5rXiWZuyepZBeacg-Ea-yzCwMW6fWlZMQ7dqfc-4lqmS7ncA_qWqtjhV36Njux-iF5QOvcuNLNW9KklIz3ePzbY6imqJ6HhjtckW-MSbJtYGiVgwTQbnpR39gY2m-2tAiiLHfZTMc" />
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+                    <img alt="Lab equipment" class="rounded-lg w-full h-32 object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuADD8cqHrXx059ax9u8SQTUxh2J0wHDcbttHe3cVC5ZjTCCT0vAC1IkbLu3azMGq9AN6kEwEkey-OP-agsPrjyf7PTyvvYM187hddwAWtDDAjBwVg1ip5IaC4JKLxBSAc3jFdgqIuKIMup0AbY-BYDEOFEfcix95-Fzf7pD1LYvIu4nv8dWrOUEQn7jUVjCI7V5jt4fSpdlq0aeA7ZOQ5sjSrh6_NJA9DHdHvCo16lN4l2ho9PiVxvC8-Lb10fjr7sXYKN8tdGexsc" />
+                    <img alt="Doctor using microscope" class="rounded-lg w-full h-32 object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvwDvgPbvhdGXI-MPvNxBeRvFaB0hznq4kB5LXGZhoB2DhnBDrDGsjVv8o3JkmQYRN-uBNCEYKu0p-GSXDsrrzg8uo0bVBDDRH4aMAUdW8DFBH0PTnJvMV3WOD7j9byiEUSRNbewyC9VJTJrZbvmCekp9bW-KzqvUmsghAs5eolNMXfsJj6xrsuDKFK7nKyvc7YaxFDUEmixUZAQMAIuOF3mBlp6APCJq95DoszTWspEbRLMPDDy9Q6Ftfv5vzFgPxs3bRvxUb3vo" />
+                    <img alt="Patient getting a scan" class="rounded-lg w-full h-32 object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLosbr-lwak4t7Mb9uDNly1A5E2oTbcrr8NOPBJrc3FaGBTyJF-rXkoK23kULFyEDpXW2hhRXkfwAOLQhxmeKWHU6Z1FQQdzio7m-8jXcUm37RwtaIHZEm2K9N52UxVm9Ko1bcuPNCnMEI7Sc1_-p3Oy6eiw_tceQ0lnSoCUxG8uInUEEUNsCNH76h7ki_XbdQnVlVU924gKyCpNnCyEByrjNp-AXbzxRCMtDQBjnivdyV-L3Ds7RHYnUCShnYMergkLcrWUWBs0M" />
+                    <img alt="Close up of medical equipment" class="rounded-lg w-full h-32 object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0CQOSUQYY1Qj4sbXAyPr-TJGywFnwBGwVCM02-daxBmb4RMRXTwUXtHlP2DZc8PfAOE5SBRRZ96qo-aY7O9mS_HXDwcUSfV89KCaLuFWiBjUduIr2LMASgwfLqEVTq03TSn-1OCr2nRCLtCiYLFK8J2u_QFUvuDzBfmbnGwN1kxsHnrd1e7oEZbbHDPbKuTuhp2dSCsjAglABgNzb14Gm5EM3hPEiNKeNWgBehcsu2eHRZenCZIjNa-PAIxoIaADtQAb6CA2-6yE" />
+                </div>
+            </div>
+        </section>
+        <section class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Team Of Consultants</h2>
+                <div class="flex justify-center mb-12">
+                    <div class="w-16 h-1 bg-blue-500"></div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <img alt="Marc Parcival" class="rounded-full w-32 h-32 mx-auto mb-4 border-4 border-gray-200"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMhih6XVZskSyU7nJGLuG0pareRyvdsONL-iVVvE6jtpTnE9xwrLsNXLKqqCypiQoz8zIlMsAt90deyKvqb50zJBPtDu4KGLvYmRciM8I1wQiqSRPnyxAQyl9vzNHHm9_ni0B2yv5UhublHhCysPwq0nG1ZOoS8lWMUJZ7GqCfxzepGftrIfjJqBdVxbSyXz-YvOceTzxyJO5tyFojOEt24FWOetna3NArtBJ8L0fIizWhIplrjsRX919xNLjtnQdpOjjbbee6Vmo" />
+                        <h3 class="text-xl font-semibold">Marc Parcival</h3>
+                        <p class="text-gray-500">Cardiology</p>
+                    </div>
+                    <div class="text-center">
+                        <img alt="Marc Parcival" class="rounded-full w-32 h-32 mx-auto mb-4 border-4 border-gray-200"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnh_8Vwvz-R8XyIcdAKD1NQC19934b9lbhSppMzcKziPugzaXO-Q_HhktHePjasmoLClmu0RaPi6Q1sGF61JTgBDAxf1TTkbjvJWMJ8i9_V8yLp_Xmq-BpKYiuQDTUv5FipZ_FKQ-rTYCHjNK-Qt9tBFugGG7tdmaEjmQUuq9qwf-fknDB_XSdtZTSUnEcEhtGPPrqukVJtqipVxpmzEgRKvzso2XSM8md28r0k3eEFRNZAoJ6L8KkNW0xgp20-K2OKjQAetCuB7c" />
+                        <h3 class="text-xl font-semibold">Marc Parcival</h3>
+                        <p class="text-gray-500">Haematology</p>
+                    </div>
+                    <div class="text-center">
+                        <img alt="Marc Parcival" class="rounded-full w-32 h-32 mx-auto mb-4 border-4 border-gray-200"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW4G7Qy3WacxNT10cV0t5cox0CxuCeyNAsH85TPwHOiLOQPQKC9w1Benm-vk7ZKUaM8q33JrM-_rL_SFg-K3EdQwLc2A50P4Cn74PrZIrMBD5CcSVJywV2HhGeH9Y_FKNXVq_lMxa3KKHPbpeWN3EDg8t18OT_bOcS7-nuRLRItO8R3fEk1bgzqYDrUftdq5aeQAN_8wo02nxWQvADHCu_AqJoR1pFKgceG2TygMN6pFseZbT7ujg2yzk6SpF7KOeo0WvE-Vi85Uo" />
+                        <h3 class="text-xl font-semibold">Marc Parcival</h3>
+                        <p class="text-gray-500">Neurology</p>
+                    </div>
+                    <div class="text-center">
+                        <img alt="Edgar Dencil" class="rounded-full w-32 h-32 mx-auto mb-4 border-4 border-gray-200"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlNZuSgtrHAMLGma-gxVpsc2bbZyh6TprAH-BndT4HNYK8nOYw6CuyILJlaTtwxIQ_5AnU0WFByUyUwWvMmJ3L33xhlN59VCHz92F_IUvecZqkXqoTRSgvobLQ-0CdUGzZMaBQw_dMEqe2olBURAx0VyjxHA5cMn5uwYmfbgceQIhij1B3CMsCS8t2oCGwF9OmyovyNx8IySgj0C-pkA9uWomr8P-6pokSbs1cIVJW5bhgA6VYL7GAo9xrKfZ0p0MbUYa9nWuYLM0" />
+                        <h3 class="text-xl font-semibold">Edgar Dencil</h3>
+                        <p class="text-gray-500">Pediatry</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-blue-500 text-white py-16 bg-cover bg-center"
+            style="background-image: url('image-17.png'); background-blend-mode: multiply; background-color: rgba(29, 161, 242, 0.8);">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4">Keep Your Headup &amp; Be Patient</h2>
+                <p class="max-w-3xl mx-auto mb-12">How all this mistaken idea of denouncing pleasure and praising pain
+                    was born and I will give you a complete account of the system and expound the actual teachings of
+                    the great explorer of the truth.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div>
+                        <i class="material-icons text-5xl mb-2">business_center</i>
+                        <p class="text-4xl font-bold">25</p>
+                        <p>Years Of Experience</p>
+                    </div>
+                    <div>
+                        <i class="material-icons text-5xl mb-2">mood</i>
+                        <p class="text-4xl font-bold">434</p>
+                        <p>Well Smiley Faces</p>
+                    </div>
+                    <div>
+                        <i class="material-icons text-5xl mb-2">favorite</i>
+                        <p class="text-4xl font-bold">32</p>
+                        <p>Heart Transplant</p>
+                    </div>
+                    <div>
+                        <i class="material-icons text-5xl mb-2">emoji_events</i>
+                        <p class="text-4xl font-bold">54</p>
+                        <p>Awards Helded</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">What Our Clients Say</h2>
+                <div class="flex justify-center mb-12">
+                    <div class="w-16 h-1 bg-blue-500"></div>
+                </div>
+                <div class="flex flex-col md:flex-row justify-center items-start gap-8">
+                    <div class="max-w-md p-8 bg-gray-50 rounded-lg relative">
+                        <p class="text-gray-600 italic">"The service I received was excellent. The doctors were
+                            professional and caring. I would highly recommend this hospital to anyone."</p>
+                        <div class="mt-6 flex items-center justify-center">
+                            <img alt="Peter Loman" class="w-12 h-12 rounded-full mr-4"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOo8z2UqVROJ2E9Cx6h6COIRa0tOVjlGLEXq3aGspKSNxRMWA45Rz2B20oa8ZqhAsUdrlOOwGgfE__2jEItkr6yuQHFrDmoechB3nZnTnr5k3XjiQX659V2eTRP7Qnw_t7bJofkW9aI3Ghni8f2lvqyMzRkMdNg1nEJsziP_blaOrO1-uJDkBzvwPgtT34G_mHCTE9EyEfUWbKfWm-m4dFRIKymmu2SzCm2Ks0IuKFvG7SUw1e74_Et4Exzv0WwQBErpMazGP4Nj8" />
+                            <div>
+                                <p class="font-semibold">Peter Loman</p>
+                                <p class="text-sm text-gray-500">New York</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-md p-8 bg-gray-50 rounded-lg relative">
+                        <p class="text-gray-600 italic">"I'm very grateful for the excellent care I received. The staff
+                            was kind and helpful, and the facilities were top-notch."</p>
+                        <div class="mt-6 flex items-center justify-center">
+                            <img alt="Jacky Michael" class="w-12 h-12 rounded-full mr-4"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtojhcEV-KuPaMH8QMHkCjLYqt2S0eYUxHM2UJgT0kr3DinVq1y6gSCpOH8Dz3hEpuDCkGRdp39JNrdw4hRn5Uy8jP26H7MOXL06jeusSWkxeUCsWZDRNpbRaqkNlDQmSlLUTUnLVzrAuPbbNkl1BNI_NW-bDmiSU1FzIZUm5CuV5MbWNr0ZbWF3fPNZcf6wDsYZynt7GgzTjl6fD-ynIELiIgU5bXzYJ3XAhA3ZjBmbGe08eAED_jSP630YHrKM1XHl43_RM-b9c" />
+                            <div>
+                                <p class="font-semibold">Jacky Michael</p>
+                                <p class="text-sm text-gray-500">California</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Latest From Blog</h2>
+                    <div class="flex justify-center mb-12">
+                        <div class="w-16 h-1 bg-blue-500"></div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img alt="Blog post image" class="w-full h-56 object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqjkfGJ7ssWgkaX8kWciQrT43dvtGs56bd51cpZ9OAG7OJI-47ywbEHQvQJZJZJtihxcbnn1lidzrwo7gV3d8O81vvUDMkMWNM979m6-fBNLrHPOnWDnLuAqihqtAc4cm0yvAVBIh-X0hEXoVcvKS8gtF-RHRjMP_qX_cEwHl4u8C8GoACMbTWtBs6DZ0rvFBm1emSBDUJtCTil-fKLKKLnESuuAqxO-LcogKK3TkzK6Ch5W1GDuhC-32Qyu-Olhq6Hn6xRZOPFxg" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">How to handle your kids' fresh cold and cough this
+                                winter?</h3>
+                            <p class="text-gray-600 mb-4">Some things you can do to help your child feel better include
+                                making sure they get enough rest and drink plenty of fluids.</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span><i class="material-icons text-sm">calendar_today</i> May 1, 2021</span>
+                                <span><i class="material-icons text-sm">comment</i> 0 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img alt="Blog post image" class="w-full h-56 object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT831UgFtsUGIgTqQkkiODZae7nZsVtxKeWfd443MbOpYg6GaB6dH-EtR0U6VoBxVfHPVToTAw84jWImy8hxcwIqAAtfsik20rDC4cWNwUiTTA5zkmXH0o6oj4tJirVJAwRBNdg28Jqz41RraJiS0zYxeHeMHzKnOO6eLKmKAuP8GnzOnAvBLW1P8qqocitfEak6-GNPGxUnGGG6YbcbKca2iwUI9mqHkWLDYP9i5dVTjptyghlzufO65zcITqPiuQJR5LDcIB8fc" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Negative stress stories add to women's health risk
+                            </h3>
+                            <p class="text-gray-600 mb-4">New research suggests that negative stories about stress can
+                                have a significant impact on women's health.</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span><i class="material-icons text-sm">calendar_today</i> May 1, 2021</span>
+                                <span><i class="material-icons text-sm">comment</i> 0 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img alt="Blog post image" class="w-full h-56 object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQm11NBHKCCnmL0pxwK-d1mE7jM4tubepArTiPrJwq1VsbOkc1HecVue3Mk2C_jIKQGBwrY-cfWq6nBL26LBy4MaFdPj2erKpGZU6AFPv3PTzXZEKI9pP6Fpo4Q5dmJxevbATBz-syNqYrjpqZfPAHQs-ZidTNIkIj_a1RkmsaxBXsLn3jueV-lSW-9NunC4qaOsVps-zWbYWS3vdkv5OqpFA8pyAvWJCisI9QWJbrwcK7crjrftDrtd2UEtGDVA2o8nS_sU-qEDM" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Using census survival rate in population health
+                                research</h3>
+                            <p class="text-gray-600 mb-4">Population health researchers often use census survival rates
+                                to estimate changes in population size over time.</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span><i class="material-icons text-sm">calendar_today</i> May 1, 2021</span>
+                                <span><i class="material-icons text-sm">comment</i> 0 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16">
+            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="col-span-2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Facilities</h2>
+                    <div class="w-16 h-1 bg-blue-500 mb-8"></div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        <div class="flex items-start space-x-4">
+                            <i class="material-icons text-blue-500 text-4xl">local_hospital</i>
+                            <div>
+                                <h3 class="text-xl font-semibold">24 Hrs Ambulance</h3>
+                                <p class="text-gray-600">We provide 24/7 ambulance service for any kind of emergency.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="material-icons text-blue-500 text-4xl">restaurant</i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Food &amp; Dietary</h3>
+                                <p class="text-gray-600">Personalized diet plans and healthy food options for all
+                                    patients.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="material-icons text-blue-500 text-4xl">person</i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Special Nurses</h3>
+                                <p class="text-gray-600">Highly trained nurses to provide special care to patients.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="material-icons text-blue-500 text-4xl">synagogue</i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Places of Worship</h3>
+                                <p class="text-gray-600">A serene place for prayer &amp; meditation, open 24/7.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Make An Appointment</h2>
+                    <form class="space-y-4">
+                        <input
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Your Name" type="text" />
+                        <input
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Your Email" type="email" />
+                        <textarea
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Your Message" rows="4"></textarea>
+                        <button
+                            class="w-full bg-blue-500 text-white py-3 rounded-md font-semibold hover:bg-blue-600 transition-colors"
+                            type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-600 text-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">You're In Good Hands</h3>
+                    <p class="text-blue-200 mb-4">We are bringing the future of healthcare. Get to know more about our
+                        services, facilities, and our team of expert doctors.</p>
+                    <a class="inline-block bg-white text-blue-600 px-6 py-2 rounded-md font-semibold hover:bg-gray-100 transition-colors"
+                        href="#">Make An Appointment</a>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Clinic Awards</h3>
+                    <div class="flex space-x-4">
+                        <img alt="Clinic award logo 1" class="h-16"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt8naQrLkWi4Rk-8-kNt7GTRwhxoAoJ3TPeM6iAi5VGcQTjMMlgN6q-AfrCzyGbw57jZWHaPqieb2R-YarvCfcoLSIDTqvW_E8go1SPC7VePc4glvI1CnGZ5gRf7LqxWkdr7mkKpQflxtDEgMIt7ivrf71Cl7X7M8AJX6bFFxgC3WM3bxRksSRkzV2mt7BMkap3dIBsKDt8oVh0lIFh9Qe-IYu7j0kJD-yBGYRCwjXE918I5Hjmd_MdhSFd9222X0OtfQyjf8QPzo" />
+                        <img alt="Clinic award logo 2" class="h-16"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBknKrv0-g9oHD_O_JwzmVDqkMDXPy9DeuUJK9k_MtukDtXj5Kg4Q3cOg4YlGIH286LCTrXflQtF_DQxmmyxNsZX4O7bDutlnkpfFBZJXyJwwK0-H6TiQBLi3ERMNy0s2JUHcW5xrvmRfcU5m8qqliioT_La8kbgbFYkDmyUPpFHEn0LhLtvj-7qCA0CE3v0huOSNgo6wNf8nlZQaksGofbQfW7BZdzsFq9KoAjqVPx3FSOUCUE7COwvYZVc-OHPaGrG_bu-EPKlQg" />
+                        <img alt="Clinic award logo 3" class="h-16"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw5tn0Pk7qpI0tSUJUk76yIA6HtRwKdM6200zb-79tr69l03Qzu0KYB9gvD3Lf-R4xMpbyc02o2fTSBOIBYuYzLD4tnFk3mzg72SyLVNp0ExINDVPDOs63dtN8jING4uW375PvvZLQiE2yUZ8T3tHqowVe8hb8wK8Ie0jTFlJ1NZYFiA3XSDN1QDGioNvaT_M8-LhNu55MS3ghEwyo3kiRZgvaq7edEQQlpH0xhnaZ_WkKLXmg5cfAMOlP-4-gGDyy7VdBNrKZ9d4" />
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Contact &amp; Appointment</h3>
+                    <p class="flex items-center mb-2"><i class="material-icons mr-2">phone</i> (237) 681-812-255</p>
+                    <p class="flex items-center mb-2"><i class="material-icons mr-2">email</i> info@medicit.com</p>
+                    <p class="flex items-center mb-2"><i class="material-icons mr-2">location_on</i> 05 Madison Ave,
+                        Broklyn, NY</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-blue-800 py-10 text-blue-300">
+            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-white font-semibold mb-4">About Hospitals</h4>
+                    <p>The first hospital in the US was built in Philadelphia in 1732. It was funded by Benjamin
+                        Franklin and Thomas Bond.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Useful Links</h4>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-white" href="#">About Us</a></li>
+                        <li><a class="hover:text-white" href="#">Services</a></li>
+                        <li><a class="hover:text-white" href="#">Departments</a></li>
+                        <li><a class="hover:text-white" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact Details</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <p>05 Madison Ave, Broklyn, NY</p>
+                        </li>
+                        <li>
+                            <p>(237) 681-812-255</p>
+                        </li>
+                        <li>
+                            <p>info@medicit.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Make An Appointment</h4>
+                    <form class="flex">
+                        <input
+                            class="bg-blue-700 border-none rounded-l-md px-4 py-2 text-white placeholder-blue-300 w-full focus:ring-2 focus:ring-white"
+                            placeholder="Your Email Address" type="email" />
+                        <button class="bg-blue-500 text-white rounded-r-md p-2 hover:bg-blue-600 transition-colors"
+                            type="submit"><i class="material-icons">send</i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-900 py-4 text-sm text-gray-500">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <p>Copyright © 2021 All Rights Reserved. Powered By <a class="text-blue-400 hover:underline"
+                        href="#">Hospita</a>.</p>
+                <div class="flex space-x-4">
+                    <a class="hover:text-white" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="hover:text-white" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="hover:text-white" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="hover:text-white" href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+
+</html>

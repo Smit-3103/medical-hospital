@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hospa Medical</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(0, 71, 124, 0.9), rgba(0, 150, 214, 0.7)), url('image-44.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <div class="main-header"></div>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="bg-blue-800 text-white text-xs py-1">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <p>Learn what to expect when visiting the Emergency Department. <a class="underline font-semibold"
+                        href="#">Learn More</a></p>
+                <div class="flex items-center space-x-4">
+                    <a class="hover:underline" href="#">Online Services</a>
+                    <a class="hover:underline" href="#">Pay Your Bill</a>
+                    <a class="hover:underline" href="#">Health Professionals</a>
+                    <a class="hover:underline" href="#">Contact</a>
+                    <a class="hover:underline" href="#">Media</a>
+                    <div class="relative">
+                        <span class="material-icons text-sm">language</span>
+                        <select class="bg-transparent text-white absolute inset-0 opacity-0">
+                            <option>English</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img alt="Hospa logo" class="h-10 mr-2"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ-3gHnAmmACYiRUqL1BLxEEpsLkVXMQs1yCNy2OvcqL4TWFp1hygj_tlnuSeJK0SVGZwgTQvCziMMn31bYLEd9VQWtA1NAXgyCVE4Gl-W1dLWn-iuB97c7Jen5f1Ctc-b8jdh1EjupwEwrUUkaqxbuAR2Pd0JAknlTbguL2JhGIJ2NDZkW4cpMxoGofWfRadoKp__UCofQWgkUu85NmCgObxwIsKaOIkpK0JgQYmI4Kb3B93LUgbN_8jaxkJgZxYsWpTl-NVSOlA" />
+                <span class="text-2xl font-bold text-blue-900">HOSPA</span>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6 text-sm">
+                <a class="text-blue-600 font-semibold" href="#">Home</a>
+                <a class="text-gray-600 hover:text-blue-600" href="#">Patients &amp; Visitors <span
+                        class="material-icons text-base align-middle">expand_more</span></a>
+                <a class="text-gray-600 hover:text-blue-600" href="#">Areas of Care <span
+                        class="material-icons text-base align-middle">expand_more</span></a>
+                <a class="text-gray-600 hover:text-blue-600" href="#">About Us <span
+                        class="material-icons text-base align-middle">expand_more</span></a>
+                <a class="text-gray-600 hover:text-blue-600" href="#">Education &amp; Research <span
+                        class="material-icons text-base align-middle">expand_more</span></a>
+                <a class="text-gray-600 hover:text-blue-600" href="#">Careers &amp; Volunteers <span
+                        class="material-icons text-base align-middle">expand_more</span></a>
+                <a class="text-gray-600 hover:text-blue-600" href="#">Pages <span
+                        class="material-icons text-base align-middle">expand_more</span></a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-600 hover:text-blue-600">
+                    <span class="material-icons">search</span>
+                </button>
+                <a class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-700 transition-colors"
+                    href="#">
+                    <span class="material-icons text-base align-middle mr-1">person</span> Request An Appointment
+                </a>
+                <button class="lg:hidden text-gray-600">
+                    <span class="material-icons">menu</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <section class="hero-bg text-white">
+        <div class="container mx-auto px-4 py-20 lg:py-32 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 lg:pr-12">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Safeguarding Tomorrow: Our Oath To
+                    Preserve Lives</h1>
+                <p class="mb-6 text-lg">Embrace a world of comprehensive healthcare where your well-being takes center
+                    stage. Our dedicated team is poised to provide you with personalized attention and expert medical
+                    services.</p>
+                <a class="bg-blue-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-600 transition-colors inline-flex items-center"
+                    href="#">
+                    <span class="material-icons mr-2">arrow_forward</span> Learn More
+                </a>
+            </div>
+            <div class="lg:w-1/2 mt-10 lg:mt-0 flex justify-end space-x-4">
+                <div class="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg flex items-center max-w-xs">
+                    <img alt="Hospital room" class="w-24 h-24 object-cover rounded-md mr-4"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuABDszLwrWT6RAwHCDUpDSmsGTLeinVXVxLXDqe8zpmK6ga5c_0M_NCwpSXo-0-2SbC9uxPgwjhWyyapUIW30ZJpvbMqhp1fI4mJKf6XdvEDWUMfk1B685AmtGzm0DDxZGU9FKmzlvVhulTgMp3AghWDPKXkty25KldeEbhfDqH-0QNJetxaDLpmW_rCwO3TLRtLAknPu1aFzTfcGq3FXRxQQDBCVlaQS24-GHwEwAvf3UB7_LK5eDUJkiWbSU1b1ALjdNFYTFAJnA" />
+                    <div>
+                        <p class="text-gray-800 text-sm font-semibold">Welcome To Hospa General Hospital. We are ready
+                            to help you.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg flex flex-col justify-center items-center text-center max-w-xs">
+                    <p class="text-gray-600 text-sm">For Any Inquiry or Emergency Service at anytime:</p>
+                    <p class="text-blue-600 font-bold text-lg mt-2 flex items-center"><span
+                            class="material-icons mr-2">call</span>CALL: +011 3252 4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-blue-50 p-6 rounded-lg text-center">
+                <div class="bg-blue-100 inline-block p-3 rounded-full mb-4">
+                    <span class="material-icons text-blue-600 text-3xl">info</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-blue-900">VISITOR INFORMATION</h3>
+                <p class="text-gray-600 mb-4 text-sm">Please check the our visitors and follow all terms &amp;
+                    conditions.</p>
+                <a class="text-blue-600 font-semibold hover:underline text-sm inline-flex items-center" href="#">Learn
+                    More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg text-center">
+                <div class="bg-green-100 inline-block p-3 rounded-full mb-4">
+                    <span class="material-icons text-green-600 text-3xl">search</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-green-900">FIND A DOCTOR</h3>
+                <p class="text-gray-600 mb-4 text-sm">Please check the our visitors and follow all terms &amp;
+                    conditions.</p>
+                <a class="text-green-600 font-semibold hover:underline text-sm inline-flex items-center" href="#">Learn
+                    More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+            </div>
+            <div class="bg-purple-50 p-6 rounded-lg text-center">
+                <div class="bg-purple-100 inline-block p-3 rounded-full mb-4">
+                    <span class="material-icons text-purple-600 text-3xl">location_on</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-purple-900">OUR LOCATIONS</h3>
+                <p class="text-gray-600 mb-4 text-sm">Please check the our visitors and follow all terms &amp;
+                    conditions.</p>
+                <a class="text-purple-600 font-semibold hover:underline text-sm inline-flex items-center" href="#">Learn
+                    More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+            </div>
+            <div class="bg-orange-50 p-6 rounded-lg text-center">
+                <div class="bg-orange-100 inline-block p-3 rounded-full mb-4">
+                    <span class="material-icons text-orange-600 text-3xl">phone_in_talk</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-orange-900">CONNECT WITH US</h3>
+                <p class="text-gray-600 mb-4 text-sm">Please check the our visitors and follow all terms &amp;
+                    conditions.</p>
+                <a class="text-orange-600 font-semibold hover:underline text-sm inline-flex items-center" href="#">Learn
+                    More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">We Provide Finest Patient Care &amp;
+                    Amenities</h2>
+                <p class="text-gray-600 mb-6">Embrace a world of comprehensive healthcare where your well-being takes
+                    center stage. Our dedicated team is dedicated to providing you with personalized and compassionate
+                    medical services.</p>
+                <a class="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors inline-flex items-center"
+                    href="#">
+                    <span class="material-icons mr-2">add_circle</span> More About Us
+                </a>
+            </div>
+            <div class="lg:w-1/2 flex gap-4">
+                <div class="relative w-1/2">
+                    <img alt="Doctor with patient" class="rounded-lg shadow-lg w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs8Ddrp9h53ejcmZda8EPjDo8_OuD801SsuuJhC9Qy8aVilFIQMThAiuiFQXh7gckoY2gbCIjP35WXnATPVSfjbLkmPmLgpa87tQQSrTiYb7xAaK-zW1aHp8fB24OdMG5jyj3ZFMDNoKdFGpkmqVTI3OPlhyftPLsWotAdZcFSxZXi5V4qjtz68cqbqxxAW6O610-0inbX86ur1BEXRehVeyZPD0vbZoHVDKrcBKQYMwh2Zp6MPQmy1GLlYlBUmR2zY57GSN6lZ_M" />
+                    <div class="absolute bottom-4 left-4 right-4 bg-white p-4 rounded-lg shadow-md text-center">
+                        <p class="text-blue-600 font-bold text-4xl">0K+</p>
+                        <p class="text-gray-600 text-sm">PATIENT'S SMILE</p>
+                    </div>
+                </div>
+                <div class="w-1/2 flex flex-col gap-4">
+                    <img alt="Surgical team in operating room" class="rounded-lg shadow-lg h-1/2 object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmLkl5z_UK9iuiL4BFw6r7wcMtNfNs5prqvAhhga9TRQQ3n2C4dBNtGJ6uijiUDpoGveYolkFhmFmHh71jslO_oKWW5uCEt4n2qyKcItUYIKom3iqWicXparLd7cD2d8okM63GzxZsFlXnNblsGSUwXKgjXmbAPtHmaLbhYK9P9tHCQit4rR1jumpKdPl37mj4vuPc92jMhOjHzXbqBn36aQletAPWdPyQzCCF-bYW7V6E38mXDF1Fuj0Z0QWl7EdxfYcYGxosAG0" />
+                    <div class="bg-white p-4 rounded-lg shadow-lg h-1/2">
+                        <h4 class="font-semibold text-gray-800 mb-2">Why Us</h4>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex items-center"><span
+                                    class="material-icons text-green-500 mr-2">check_circle</span>Contactless Care</li>
+                            <li class="flex items-center"><span
+                                    class="material-icons text-green-500 mr-2">check_circle</span>Warm and Welcoming
+                                Environment</li>
+                            <li class="flex items-center"><span
+                                    class="material-icons text-green-500 mr-2">check_circle</span>Highly Qualified Staff
+                            </li>
+                            <li class="flex items-center"><span
+                                    class="material-icons text-green-500 mr-2">check_circle</span>Expert Doctors</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <span class="text-blue-600 font-semibold text-sm">OUR SERVICES</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-12">We Serve In Different Areas For Our
+                Patients</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-left">
+                    <img alt="Medical team examining x-ray" class="h-40 w-full object-cover rounded-md mb-4"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzN5hKGqZXz2v90caYzoVqaMsvOuOsHG7cCxDxaq2bOknOVS-PdweGva07eIsufhTlDe-HeB748nW_Dy58KZXCX8QapIlOVokHkHjlZGC2E8zb67jxZzL6fRiFjpu6y2hDM6coQEKpV7Q26Gn56HGt-7iOxyilutSF--JMNQ1WImsiUpOyp345tyPpnZRY3jOsZWb27hFxUlxo8u9-1hAOKpmFdbiEiIzivlSyFTHrzGovi6bBG6_d9iDxV92Kn7CjpUTxZBMP13I" />
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Neurology</h3>
+                    <p class="text-gray-600 text-sm mb-4">20+ Doctors are available under this service for taking care.
+                    </p>
+                    <a class="text-blue-600 font-semibold hover:underline text-sm inline-flex items-center"
+                        href="#">Read More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-left">
+                    <img alt="Surgeons in operating room" class="h-40 w-full object-cover rounded-md mb-4"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT2FzvB_J5Jxz-lHBTblJGOffyYkewsj1H9wpDvlNVuPDJqp50zgM_FFvWuH7pO8yujJDLVOgiR-e54vFSdUjoFgTwpds3yV3rNr2lT4hUTn-6Lya_GRnpm-alvIkuLWaFaGC3mHoZYquqLgyFxuMYKEVuOb_Blw0xBBeZfZEABLjKK5zrNRew2DdfhydsKSLT_PVlxBbRy2sJRYkxyOLKdxAtcjEPkzKXiAkrh7wrXpGyYYkG7_j_fiMxIecBVEs7tbTwdprm0Z8" />
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Orthopedic</h3>
+                    <p class="text-gray-600 text-sm mb-4">20+ Doctors are available under this service for taking care.
+                    </p>
+                    <a class="text-blue-600 font-semibold hover:underline text-sm inline-flex items-center"
+                        href="#">Read More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-left">
+                    <img alt="Surgeon performing surgery" class="h-40 w-full object-cover rounded-md mb-4"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdRBJvwmAorT3Sqp8axPjrrlOE7e3uoWIR8eVsVfX90k2dUP5amuhz4__mlDiSYaHsh9u_o-s890MC-9ZE2lxG-TXXQcFnJ9VmPOKMcQPoFUZJzep1en3_FSZXH7q7lr1Vfj_F46fjhh4Hglmy1y8t81nQGc1ND5qeyr9ZF4TqS412eG4625dgeMay8K2ONz77aGrQwJlJ2ryHw1nbajDCqmUpWlZrs3px4yjNHqj1Q7x8008evd6Kz_d-BGGCi2rkqwgUnQvTfFU" />
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Surgery</h3>
+                    <p class="text-gray-600 text-sm mb-4">20+ Doctors are available under this service for taking care.
+                    </p>
+                    <a class="text-blue-600 font-semibold hover:underline text-sm inline-flex items-center"
+                        href="#">Read More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-left">
+                    <img alt="Doctor examining patient's eyes" class="h-40 w-full object-cover rounded-md mb-4"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyXEqpC7JZXKnRBVCK94kLv7dFudt2KQoVxsl7tOi2qtaghNIWlWIGOB6LJIIxb7Xe1lSDBIYu48TWfZxROjZLbot1BzxHmYidz2o7vEXd5fAFVgRzsS9d3g1vAb9IYPfyf2_5lPLfpq-fhzR1zsMEkpxfreE9IAEdyPC3U0a9Z3KRDrJNd_Ri8tZoetodPm4KcwKPmdkKBk5YMHml-hHx4w_Eds49n9ukqP3Pv8FYr_HE_jGWSs58yZoy3q5-xhOoczWsGuoQ9YY" />
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Ophthalmology</h3>
+                    <p class="text-gray-600 text-sm mb-4">20+ Doctors are available under this service for taking care.
+                    </p>
+                    <a class="text-blue-600 font-semibold hover:underline text-sm inline-flex items-center"
+                        href="#">Read More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-left">
+                    <img alt="Scientist in a lab" class="h-40 w-full object-cover rounded-md mb-4"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6OMJyUX0D8Pm_J2VBPpq79GkxUmfhsHtY2MzTMJFtMzRrUY7kOuz-Be3hMhRZeArU2LkrEfw8hrGvIEA9_1UJC8IC6xvtHHSnkrlHkzFuw_xH9wUi_WIzaFdMr7EMqyVt4Hffbxu989kmTeEBQ7TXFgMdEbQqjZ2ZCt4ny04LKT_TGbJ-aSlGL8ChUayalzoVVlEKWM4a9QUeNRc4arUgQlbfVrFx6DlMTxeZfFdQe7ToVQObGdmzh7e8YiBYRckNZE2p2_G1q4g" />
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Cardiology</h3>
+                    <p class="text-gray-600 text-sm mb-4">20+ Doctors are available under this service for taking care.
+                    </p>
+                    <a class="text-blue-600 font-semibold hover:underline text-sm inline-flex items-center"
+                        href="#">Read More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-left">
+                    <img alt="Dentist with a patient" class="h-40 w-full object-cover rounded-md mb-4"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2wYRBCqivwHdeAH-DcrGL4gIrGzuVoeP5Sx6ur_dYCaaRG9Byc21Jy9NNrKoVxV96exPz1PjTDM8meKoGoS1AxkNGJzj95ViV07beDo4VYeNVxVjhyOpOGKQM0wtz-Gu6gYZzKPqG3kjtBgfwt0SffIcLEqjhvwAo1elpEixtqOMyWMlX8aqf_JuRG4RLGdDN0JbiGI6h9_Vi8XLE-CYYbmHUsVuddp2o4xEPnLq_mDl0jBwj-RKNKwBYA5vAbe5tbxKf7Ob5wdo" />
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Dental Care</h3>
+                    <p class="text-gray-600 text-sm mb-4">20+ Doctors are available under this service for taking care.
+                    </p>
+                    <a class="text-blue-600 font-semibold hover:underline text-sm inline-flex items-center"
+                        href="#">Read More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-left">
+                    <img alt="Doctor checking a child patient" class="h-40 w-full object-cover rounded-md mb-4"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcBIBmysiecLTgnclm_nKQY-i0xgylKwV2QEVb8ZJJFNvfx_0cZliJpgondqjO8GhvdtzdiM4cc_ndPuqQ9s-aYf-LG4jB1vH6MWfDjIwuayQpegTcwIJotBYI_D098tS0ivSZOPPq56erZn7CioT-RBamnt6RCxPHgKoStzk2H7oMt26FH_MPLz0IbwgMA-P13hConY_-9bmLSTI_MHKSpFKRBbpjsyhZ-MOYmR_3axnBFcgQj0R2u9FOHV07u74st894dkcjWTg" />
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Pediatrics</h3>
+                    <p class="text-gray-600 text-sm mb-4">20+ Doctors are available under this service for taking care.
+                    </p>
+                    <a class="text-blue-600 font-semibold hover:underline text-sm inline-flex items-center"
+                        href="#">Read More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-left">
+                    <img alt="Radiologist looking at scan" class="h-40 w-full object-cover rounded-md mb-4"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM8SxzbT_OuImX_Y3jgGlc4Zaq98YocwZFkgJnI4BWkSgBzxvc2dJu94YaDUIvKEuDMRNEQOSTzIT05Va2j5OXJZL50XVm294UQXE_-BMMigA0B00Yx9BeCQE3xMim9MiFUoA5AutKsVAE2f2UHL6D8WRLZWwHw0r_dQq3zE_J7_TtjmwzG4wf_JcLV3seZMETEZuRCFGXuAems3rZX2UIfpsbxhnbDSXQXc0vqiXqcaofnZ6WgrkMyCoC-D3vsg_xlPyLX3m9WfU" />
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Radiology</h3>
+                    <p class="text-gray-600 text-sm mb-4">20+ Doctors are available under this service for taking care.
+                    </p>
+                    <a class="text-blue-600 font-semibold hover:underline text-sm inline-flex items-center"
+                        href="#">Read More <span class="material-icons text-base ml-1">arrow_forward</span></a>
+                </div>
+            </div>
+            <p class="mt-8 text-gray-600 text-sm">We have 8+ more Care Service including Emergency Department. <a
+                    class="text-blue-600 font-semibold hover:underline" href="#">View All <span
+                        class="material-icons text-base align-middle">arrow_forward</span></a></p>
+        </div>
+    </section>
+    <section class="py-16 bg-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">We Are Your Trusted Friend <span
+                    class="text-blue-600">*</span> We Are Your Family</h2>
+            <p class="text-gray-600 mb-12 max-w-2xl mx-auto">We are a team of dedicated professionals who are committed
+                to providing the best possible care to our patients. We are here to help you and your family.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-green-400 p-8 rounded-lg text-white text-left relative overflow-hidden">
+                    <img alt="Stethoscope icon" class="absolute -right-4 -bottom-4 w-28 h-28 opacity-20"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZiTT2JO_CPlO_6OBQnZji-9rLs30wuwLwFmsbeX_Zjz__-UuYcWF9WyFJrzYrDjtYr7LdYH0_nQY4SBeodiQaKougAE5J6oTX5dBtM_q0pTMStFkK3kshPhIHf9TkeCmJe3wp8q4jDoyNppnPicVM26nYr0gpNVDrwWNZJKapUPxFX9LbOuJC7CZEZWHwPUWZ54lsri31stWu-PW7mGBcHG8INcOq3bTYxGB36UzxXjNchoWFi0Fh_cr_29IWEHQk4M17e6YOQS8" />
+                    <h3 class="text-2xl font-bold mb-2">Instant Video Consultation</h3>
+                    <p class="mb-6 text-sm">Connect with a doctor instantly for medical expert of any kind of health
+                        issues.</p>
+                    <a class="font-semibold hover:underline inline-flex items-center" href="#">Learn More <span
+                            class="material-icons text-base ml-1">arrow_forward</span></a>
+                </div>
+                <div class="bg-purple-500 p-8 rounded-lg text-white text-left relative overflow-hidden">
+                    <img alt="Medicine capsule icon" class="absolute -right-4 -bottom-4 w-28 h-28 opacity-20"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_exD41BDihAKE1J97UurHfXjd3R4OCGlZY8PP1NTDbsS3DyWzzVXDJElErZvhxZcwqPWlViFmiUrSgQSgGa0FD7EeKwG5zmhIFEKPqNrvEjMCBZkoGcS6-NHQVjEUzUtTaTRsoG9L1HNJ6NBu1qWACq38PNWCm-bRL7-Gz3HSKwXWvphre4AY0QH5y73xCkuUuCWP_BRtqRVQrdOy76eBGdjxncnwa5C5fLxOHItYLQTlMopMXwV5ozdTw2v5H87fgw4Gp1DspbA" />
+                    <h3 class="text-2xl font-bold mb-2">24/7 Medicines</h3>
+                    <p class="mb-6 text-sm">Order your medicines from our online store &amp; get them delivered to your
+                        doorstep.</p>
+                    <a class="font-semibold hover:underline inline-flex items-center" href="#">Learn More <span
+                            class="material-icons text-base ml-1">arrow_forward</span></a>
+                </div>
+                <div class="bg-red-400 p-8 rounded-lg text-white text-left relative overflow-hidden">
+                    <img alt="Lab beaker icon" class="absolute -right-4 -bottom-4 w-28 h-28 opacity-20"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCztvijnSqHQZdGiSiWqbc0ykYMDJWvb4niZnxODhEh6lWDuhZUxNbRKbbMvfpIhrpCJ7vn5XpQgZw3_DBOYdaAplSQtcn6Hnla0cWgytvBA8wOKBs2GOcUEJ_f9h9qq16M6lcrmffegNnrZXVX7uBY5PvYej3z2ctAUCBuhDUwyFdkOXkgFT9yaDR_DSHNCjxpp_ZaCOolozBlk2PjPzHgZ-s4jc_SuSakXg1rQ8UMvNlMpI66OpsGympvnq7JnLMWmd-cTbm0q1k" />
+                    <h3 class="text-2xl font-bold mb-2">Accurate Lab Tests</h3>
+                    <p class="mb-6 text-sm">Get your lab tests done from home &amp; get 99.9% accurate reports.</p>
+                    <a class="font-semibold hover:underline inline-flex items-center" href="#">Learn More <span
+                            class="material-icons text-base ml-1">arrow_forward</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-50 py-12 lg:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-800 mb-4">Your Health, Our Priority</h1>
+                    <p class="text-gray-600 mb-8">We provide the best medical services. Our team of expert doctors are
+                        here to help you with your health concerns.</p>
+                    <a class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700" href="#">Learn More</a>
+                </div>
+                <div class="lg:w-1/2 mt-10 lg:mt-0">
+                    <img alt="Doctor with a patient" class="rounded-lg shadow-lg"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpWf6FUQWzsgNlottOwy3v7x_QSl8sPTlRKFrPSh9kWemc326xV9jKWszLoRw3QOjJhX7bkWZznHNZbTZynZKwI8BpphMJL_rLmPjhaSq7r6fo2UoosWqxyXuXhDgPRji4KjyPvsJ5UhUwtcXO-kR80RM8cBiyiCr2V5lHSbwRyuAaXZrsnw6tQG7QpFwVq9sKaNPsA2N7DEpWv_msP-EFaVGrncNFLfHxG3M_t9QWF1aIX6PMMJ1P7P3pKE0BiGbSom9xdj_ZgQZq" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-white" id="appointment">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                <div class="lg:w-1/2">
+                    <img alt="Hospital waiting room" class="object-cover h-full w-full"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQaNu1JFKWXGNUoQcLNtTnXvk2CJVL1j0PPPSe-ciJTdT6q5OKv5td_Obps29hrMRf_LoxyoDfyFlABVL_1z39B9duntdnJag61aZvfvnIjd3gp8UF70gGb33RsBuVFTG76fVWsCVbN7vuXbOwtkYa3DLSQP6OrBPRixj9goer5ETTXxQ7FqjLetIS_bF0aHjDOKJaZtajCciF0oXInoOa6u43E-Du5UIIpGB0BYSIYHbA-mxHcdMpfaOkl-65Fv5JMMynklPYu0UP" />
+                </div>
+                <div class="lg:w-1/2 p-8 lg:p-12">
+                    <h3 class="text-sm font-semibold text-blue-600">BOOK AN APPOINTMENT</h3>
+                    <h2 class="text-2xl lg:text-3xl font-bold text-gray-800 mt-2 mb-6">Book an appointment for an
+                        in-clinic consultation</h2>
+                    <form>
+                        <div class="mb-4">
+                            <input
+                                class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                                placeholder="Name" type="text" />
+                        </div>
+                        <div class="mb-4">
+                            <input
+                                class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                                placeholder="Email" type="email" />
+                        </div>
+                        <div class="mb-4">
+                            <input
+                                class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                                placeholder="Phone No" type="tel" />
+                        </div>
+                        <div class="mb-4">
+                            <input
+                                class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                                placeholder="Reason of Visit" type="text" />
+                        </div>
+                        <div class="mb-4">
+                            <select
+                                class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 text-gray-400">
+                                <option>Choose a doctor</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <input
+                                class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 text-gray-400"
+                                type="date" value="2023-08-17" />
+                            <select
+                                class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 text-gray-400">
+                                <option>08:00 AM-12:00 PM</option>
+                            </select>
+                        </div>
+                        <button
+                            class="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 transition duration-300"
+                            type="submit">Request For Appointment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex items-center justify-between bg-blue-50 p-4 rounded-lg mt-8">
+                <div class="flex items-center">
+                    <span class="material-icons text-blue-600 mr-3">location_on</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">FIND A LOCATION NEARBY</p>
+                        <p class="text-sm text-gray-600">Search a doctor and book an appointment online for the nearest
+                            location from the options.</p>
+                    </div>
+                </div>
+                <button class="bg-blue-600 p-2 rounded-full">
+                    <span class="material-icons text-white">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-gray-50" id="doctors">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-sm font-semibold text-blue-600">OUR DOCTORS</h3>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mt-2">Our Experts Doctors For The Patients</h2>
+                <div class="mt-6 flex justify-center space-x-2">
+                    <button
+                        class="px-4 py-2 text-sm font-medium rounded-full bg-blue-100 text-blue-700">Cardiologist</button>
+                    <button
+                        class="px-4 py-2 text-sm font-medium rounded-full text-gray-500 hover:bg-blue-100 hover:text-blue-700">Orthopedist</button>
+                    <button
+                        class="px-4 py-2 text-sm font-medium rounded-full text-gray-500 hover:bg-blue-100 hover:text-blue-700">Nutritionist</button>
+                    <button
+                        class="px-4 py-2 text-sm font-medium rounded-full text-gray-500 hover:bg-blue-100 hover:text-blue-700">Gynecologist</button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="flex items-center justify-center space-x-4 lg:space-x-8 overflow-x-auto pb-4">
+                    <div class="flex-shrink-0 w-64 text-center">
+                        <div class="relative">
+                            <img alt="Doctor Walter White" class="w-full h-auto rounded-lg shadow-md"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAZ8VkhLNQWid2fOq4hLFiW_FgEDopDz7kHtYXA8ByCP_RAcBHB7kEgcQOc4I6FehuisEpNZ7eohIGG1vOu2QwJL42_blVXTuakAw6Lgad1UuYT82YnHLi1H6F9inaaHem9ZQ-XeoW_YeaEs-x2Saw5iGtsi9INX5df8nF_7o1IhVOEdHlf0-slDI8bHgitUsB0QDgMJyWhCWXW8PSBDd7eq555MU8KBwyOx4GprGlRhm52-u2b1oRY8UL471Jll_he15B16_xONFV" />
+                            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR9NLjCCgcZuW-MMArrjdVBYrvC1jeUXDDYkiG1kldjAc8EhQCpV7oynM48z-fhqX3sLf88-V57xR_Vrccm1KS09onHEsU32ymdb9b25MgSIaPHHymG5AKcLXp2bmjMB0JP-kjrMS-RQPnQF461SJ-2zceUES1MfYlC6eG7p9_yKogACztV7ww045eNNL9lXiYVSzL9JbTAPP3ATtn985U4_-asPwSJ0Hm0jJ6IVX931J_4D5ilCQWXN6d_v2XZYPAdwWZwYfg3Lq_" /></a>
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1QDHfm0fBY2YHZBe-T6UV0oDAjGadRigpL-eMOZ5O0YJLx_Df6682iLasQkZwG9IAa7m0oA0WGRFNrsDp3zV6xlXlNJLmu5XP_f7R1q3QR2ml9ueViKrxKmtTFbS6mrTKKFWmgMW2_unJXtWsAKFRt5PmQjx-elRbWXOsY9EJMbwyvLyxYhHWvdQKP2e-WuDU6oDQlJm01OnkPIwOpGTG9tQ2bbWiXTwU2T5iQqmg-TxrSyPFWK6RvXk3pzzKpM8HvV-BlWi7KYk3" /></a>
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDumn0AO1CKqJI6bv5cYw7Fe3J3jcspOzyv8zN_PVdwKRo_9s0pv3gpJ7s686uZAPdo7QYxmOHomVY3imKNByh7ESJpYi62vF9fcUloHSCaR1_x23FwR-w6t3V1VcSxDFwZ_5HfzacU3Hiv5HBNSQ_hTN6YH8sNt5_O9ItZVlpPmrhYkbGVbdFs9T1Dommhz9o8u_E9gnrdRRd9wIKq8jmgWL_3d5vfsZrhPFrxmOuy7sE2AhdxVQ6bEJ3-m20BDhGexue41OraHCoz" /></a>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mt-4 text-gray-800">Dr. Walter White</h4>
+                        <p class="text-sm text-gray-500">Head of Cardiology Department</p>
+                    </div>
+                    <div class="flex-shrink-0 w-64 text-center">
+                        <div class="relative">
+                            <img alt="Doctor Victor James" class="w-full h-auto rounded-lg shadow-md"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCusI_kb-u2vo9gtytlmSQtDXDw4Nhf-stgkWG1VlZ6dZxC5E21G-OP_e4t3PgrP3YFDoP7loRJlSmTjhYv6acvr9a3VfrK_XDNz_F4axTLZXMWQz-BdgbnaRGUzP2OI92acRuDCLE8g-ZuKNI8TGLD8PPjQaRiJD0k3p8h3xo1_Kt8E_pTqsFfNatXdbYGJrIRKRdaWCUXbfzUM_9FHMCybpatGjnu3U3AUIhrEzo3cXbYn4xiCXw_1P5FXOYCKe4oE_Q_XkKvxw8i" />
+                            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYj9WKfbvrVD8NFCvDO4hoSFX-EK6HGjpOQw3PvDkb4Oj8UvSr5xytqrxl7piQWr5A86aYF33ZOqXDsYgf4iotEW73au9k4A_qCaPiDVNLi3LaGOBRBohMj_X7j4JsrSRID39hu3q-e0FQLgX3AQOfiMz5RR-igityXdYUQ6giOhImwbfuq86cq-55vJ0d1CMd3JWWQRVZ6NvaPlXf3BV8WWekUtvgnSM9s4gA-ynC7eGpsuUqO0vJ03VTZuTZNKrSTKAXBkjgRhwv" /></a>
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPprA8QJfHF1C9UCV9QeG1xinnKuvQ2F27nnhFKRZXq57qO2lbsKauXb1kMjqa8IHt1TW6_UfDnxPnqryFqZW_vV_hK6-8CLvMQt9DmPtE0ZW7ETfzb4AzcXV23Ry6PbzUf_UFABdl9Dr8w4j2K4lSqkfx3wIS4YKuSYHmxic0bVIhuM2GkjazP7orfDb4--KpFZCxyrtulUKvu_VZG1rprwRBZKqq_0gLyt5wDdqB2wZ6qczL-lyLiH8LaOswoouUM7-iguLjs7SE" /></a>
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbkIEJ2qhRDyTUaAt-uL4SdkXWLhacV2vaaJBwGTw0lCReKEz2VApWah-3Fpg8PcqnCXUiWFE01yw16ALqJMa6moGNuJYO8QgMfxx7Q5g16mt94qYzV60iV0rCCbt8PmVBLJ8QnBjxOQSfwSEiFcEh38TKihVAkLc4lUve1aSPZ9gUyL3HBKA3TyVFaiK1Lye0nc-TAFn3p584_zUMkGdKF6TFTiWiytzsjqru-uJc1Q3OYXCwaZZCWH3KelSXubqeJm5wDpOnfciD" /></a>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mt-4 text-gray-800">Dr. Victor James</h4>
+                        <p class="text-sm text-gray-500">Head of Orthopedist Department</p>
+                    </div>
+                    <div class="flex-shrink-0 w-64 text-center">
+                        <div class="relative">
+                            <img alt="Doctor Phillips Rascal" class="w-full h-auto rounded-lg shadow-md"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbc1ziqG10syVGA4uzY9YJ7uie7Iwlc28UuOrRXumnrOV6hKys86Iiq8_oNKhI1ywTVJpDV84HWVJa8xk43znqrCHUJvOHPozmTgaGQzAQgEJp9u8Aq23TROnyky7mzRS7vfFIBsXqxN5gs9tciohl9lMwnuZij9oH_KD9pnMSZ0IN360v28WXFMWF8yZTrwI4yh3jtlMcq51xEViGIz0wh2jEa7UQkRmwDC3eEDFyGomOtpBKAzk4pTUk3wQyZMUC93vm1_mZYZLn" />
+                            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI_C4qtOiwvGYtpMilR_HzQf4f7uFp2kkpdsLp20YEK48pHuEoP2BB03x0yZeUEFuuhf4bMR7UWqPElF6yOXqRb1kWUXZ6aBl2u0FmidxLCkg-1E69rmufhb6E81bQ4aQFIi5Z066JuC8MTLPssvxzDxMnOk-oZANHNaoY-5IjEy1HGB2jH5kqT_FIt_V96GqHsunHjt21VCGaXxkiHAf7pcyOmJoi18bmc4vl3KH7hl9c6PE3dkLrYZk82fl60DyVdhw_hguHvx5a" /></a>
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzrfLaPDsWUc34gSBYEG22ItKG9AJvObm4wWtVkeMDBIdSa77up_0ArkJe07QmvrIvxhK2wcUMpCKSboPPyMjWHnAtGMoatRvjtuLQkfNv1vr_fJRG5SUJbWji9JYXuOrE7f4b7_1-QtYl7wY1H5_O139yKx1eD1STh0VJnwNaiGDdZUKmX1T3wMd0i6jlnMPgn4fX-AJQLlmUr3jzANOOrW0ToU85JOIK-dU7w55dgP4PER8XBdf7biXw7TpJoHSRy--IdVZKEZdq" /></a>
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf0D4_zm0Now7iCi2nFicINLku9qiZnq3-7Yhfo0hwPl3sqrvmomfGe5fMXaOuIl8eKkxbZOGwMWjPSFzqgMlU-IG8qmlEWWwPlI5JI5Ahvm81SeQKiDzb54frTbKuHVtvX0CIjHDEV2QLdz7wlkqHWjlL_zfz88YVqr57jOxmIgg9ZvBbkkZ4jISU8Uf08wiFuIBmcBBQl4utpY4It_6FPq9n-9_LDK5dtCndY3ClrCkQnRfOLXAMMGft0pyntFTWHChI6gcfvfvb" /></a>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mt-4 text-gray-800">Dr. Phillips Rascal</h4>
+                        <p class="text-sm text-gray-500">Gynecologist</p>
+                    </div>
+                    <div class="flex-shrink-0 w-64 text-center">
+                        <div class="relative">
+                            <img alt="Doctor Jonathan Ronan" class="w-full h-auto rounded-lg shadow-md"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo4FckZL1zh3qpP_f3KCd-oqaUUH7bjhSP1cyDg6d7wRU7uilNEoDxwc6GRVCEaF7pvWCTZ7iIrIUGXZvOvor0JNcKGB2kvkXqLvvlh9tYNeU7BQH93koopZVi49CFgj4EAdPcvvibjA0nLGgYzojnoO4yFpqIfcnzjsdvdQR0pXY20dEuDEVj5UmVbm2TFy82qkHcqyRfkB6N3ODcBLvytBuoXGA_cwKm9WC-5ECtWSpeGu3WeysEOVImkJqbBOCFI4MwBX4orVUx" />
+                            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxY4bQWywZXqXfzEHtuvcHbvZE0C16l58tc_MqGO4Cqh52wzFfwztLlAMjM26EvmhmZt4_xVtY64bSx8PfUPvE9bXkBJF6dHmvTqKk0P5k9mCX_zz6ReMuqob8xd0lxuc3oriyh2YCM_2Wm3Lj4agckKs2b10w_0IXOx1o1aasqOMeK0VZnjOEULWgYFz9P0sDlQZQTgFZxK8n55YLWSwgtbRQtL7P5pGORehSftKybyiRkSXl9n7EnJcmZ6qLd6078lwglBoaluwG" /></a>
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2ujU_T1eGu79UYmqEQG43QEUXth4YshBVWeTcQbFAvcqoMuI7HdMxMOFAmr7CCWeQuweAeV-zm0qKuuYL3X1V17GLiJMsEyav0s0Jrp3KM3busGjFwbIcQGdFxEg9NZxzdDuVd4rJkZO6jCZcN1uRScMSAmgQx-7GdjFW-tAuWKPLg6W0hO80myu-B5rPJkO4CcgVnX7TokkkMwHhe00Wm11TUXXgVSCR89hSR_FUvLOG2Eetsew690ErVmsD6dDOJoDLgbsvVEtV" /></a>
+                                <a class="bg-white p-2 rounded-full shadow" href="#"><img alt="social icon" class="h-4"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcKf1k4J2QOqx30E7TUAeciFSVnp_Xi0U2z4y9lIi9ivyx5G_zn7oAAACtCrDJ_362evx1hLquaFLSCeRgBtbpnEHnzFnDT6FrLvUQ7kzwv75fWKRK4sA2sKJb5wBb8whxS52f3G3VOtQXWzjLTS3UnT4IFz17j2ZHsmyx884PfpvOtxmxZxFcYkwbpjkPdE7CVZAGD5APzXpkeZbIDMzY7vyrxj-hBPxNAZ2yEFANSrI7xM_aoUklbxKAYRrTCiUuo_4FLHuZN4Gk" /></a>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mt-4 text-gray-800">Dr. Jonathan Ronan</h4>
+                        <p class="text-sm text-gray-500">Head of Cardiology Department</p>
+                    </div>
+                </div>
+                <button
+                    class="absolute top-1/2 -translate-y-1/2 -left-4 bg-white p-2 rounded-full shadow-md hidden md:block">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button
+                    class="absolute top-1/2 -translate-y-1/2 -right-4 bg-white p-2 rounded-full shadow-md hidden md:block">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-blue-50 rounded-lg p-8 lg:p-0 flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 relative lg:pl-16">
+                    <img alt="Mobile App Screenshot" class="max-w-xs mx-auto lg:max-w-sm rounded-lg relative z-10"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSQa8lR8qXKHMg0cf-Rdhz2sODKWmHUPJaJ27OAqjapkWwRhhQAT6wCG1NNGCBEyyW9aCbKSp0NqolVQSnV38OISbHbVNzfGHgNmrnImHC2FqNXF8W364Cqwg6YUjBWKa3MFF0IIUUpWMUHvPCkv_ukxw2VyYL3ImAUCvqaBWT0SW33LsSlxIe9Wf9XNMU1Aw7wg4uzyQS2rfB2gbUp-0KxZ4P9vMLF2oKL-sWZirHwbvTKrw7mo0WwBBG42Ayq566qxrLaEX_n4KN" />
+                </div>
+                <div class="lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0 lg:pr-16">
+                    <h3 class="text-sm font-semibold text-blue-600">GET OUR MOBILE APP</h3>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">Download Our Mobile App For The
+                        Best Experience</h2>
+                    <p class="text-gray-600 mb-8">Access your health records, book appointments, and connect with your
+                        doctor on the go. Download our app for a seamless healthcare experience.</p>
+                    <div class="flex justify-center lg:justify-start space-x-4">
+                        <a href="#"><img alt="Get it on Google Play" class="h-12"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIxuV4KGefzda-hkE3z7tARMAwtvcHF6Xfw1Ulm-hq1ZlxgdJa1l-SrgOCaetRNZXydL_8pvj_ejie5A99ZKDPni0KP6LCNvOjwNCmv5Y17bUYO7sRhkZui2opB2A3qWubhuutzwKup6q86Gz3tysURgWHnGglHyvMB7XOiEsmDz9MS4xL9Tv3JawresxJJfcAPPMr46SsIhPlXo6_ERzOSjkP2Tcr7ZTruXAhqnr46-VXVJHeegxosYUfMqq7RRunOR49rmp5AUAK" /></a>
+                        <a href="#"><img alt="Download on the App Store" class="h-12"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbwtvHA0dqAnqwACbzzIv0CLv8CyBKdQUE1_7T2i2qJDTobgdBpfAadN9XHoIxN19Wwa5FEb_k8NUkQu6H0kM6Zud1GNLHSJcDkl3U8JOqVQ60LJbUhraeD-8KlccVa0lP3PJDhi0yHM_zWN87aU_G85eD99GsDFChpZTwlddrbJFNK7025-s6JkMTN39gtbOX0gwnYMqk6X2Y6bpOYfQUemvxi6tfoexn-0y3YkaT-oF8RWdETU3gX9p94D9azXbNmzhG-HrlBv5R" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-start lg:space-x-12">
+                <div class="lg:w-1/2">
+                    <img alt="Medical staff consulting" class="rounded-lg shadow-md w-full"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm-fr2g-KDlu0Hw4o2ZZs6vMADu4Oc-8-MImwJWfJjslxp5koaSzGhSXdbFcrCgbC3JZQs4X_Lewr1yrj7c-9I-s7nz4S9zv4uSVzaEhslePXWxMoa3dtxO4CZ5p1-Rqr49DBofuxpWUyouCLZNpGGhJMf9m0iJr5oy5vrg5ACUb-jt3P_y7A97ATf4E-PKVtdqaBvY3pK8wZgnrXF2J5Xq-9MGuKeKM8vKnM0eq-EocZqR1BCdzHxWPj0jPbcJ3Hi-3gvgMQ6XyGR" />
+                </div>
+                <div class="lg:w-1/2 mt-8 lg:mt-0">
+                    <h3 class="text-sm font-semibold text-blue-600">FAQ</h3>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-8">We Are Here To Answer Your
+                        Questions</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-center cursor-pointer">
+                                <h4 class="font-semibold text-gray-800">How to book online appointment?</h4>
+                                <span class="material-icons text-blue-600">expand_more</span>
+                            </div>
+                            <p class="text-gray-600 mt-2 text-sm">Suspendisse potenti. In non arcu nec elit accumsan
+                                porta pretium elementum vel dapibus sed ut. Fermentum adipiscing pellentesque eu sed
+                                cursus. Tortor viverra natoque vitae. Ornare etiam sed vitae, nec et.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-center cursor-pointer">
+                                <h4 class="font-semibold text-gray-800">How to make payment?</h4>
+                                <span class="material-icons text-gray-500">chevron_right</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-center cursor-pointer">
+                                <h4 class="font-semibold text-gray-800">How to book cabin in hospital?</h4>
+                                <span class="material-icons text-gray-500">chevron_right</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-center cursor-pointer">
+                                <h4 class="font-semibold text-gray-800">How much my insurance cover?</h4>
+                                <span class="material-icons text-gray-500">chevron_right</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-center cursor-pointer">
+                                <h4 class="font-semibold text-gray-800">How to book online appointment?</h4>
+                                <span class="material-icons text-gray-500">chevron_right</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-sm font-semibold text-blue-600">BLOG &amp; ARTICLES</h3>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mt-2">Latest Press Releases</h2>
+            </div>
+            <div class="relative">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img alt="Mother and child" class="w-full h-48 object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi4v-pvI8y__Vr390uCKqtGyyqM9lb659clbRxTJ1Cd1_ioV6jkqI-gXidZ5rnyXi7LsRssK9KW0Cvg34avWliwM2dFmIOYzyTd9vxddEQnv40r5Hae6M4zWNxsD2XX0aGNtyITqqVN1vMUAgC_BpMgpvOGe_3YhHxH4N_4grCY3QRWI_CfTSADrp-ITWy3J-sS4rOqmxZtNGaMJgba23lZLcnVmtG6CqhqgFo65_aq3rh0lxS9UI_EN0AuH1ir8BbVIcGViKMFimr" />
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <span class="text-blue-600 font-semibold mr-2">Naturopathic</span>
+                                <span class="mr-4">OCT 09, 2024</span>
+                                <span>2 MINS READ</span>
+                            </div>
+                            <h3 class="font-bold text-xl text-gray-800 mb-2">How to prepare your baby's arrival a
+                                checklist for expectant parents</h3>
+                            <a class="text-blue-600 font-semibold text-sm flex items-center" href="#">Read More <span
+                                    class="material-icons text-sm ml-1">arrow_forward</span></a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img alt="Pregnant woman" class="w-full h-48 object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA5a7bNRYxLQCJj512hBnKhHPlAV3eVeFyNitu9rDwhU9vWQZMT6TXzeStlzf-Ig6rMOAUhM2zXxToaOzpETb697vRhONvk9qRI_afWm1BaNlZHeGv5zD3Rhc0HqC4aNhIZXQ56ESqXhwE7Qj3jRnILJwFk7JOQd9ijZTeWevGp0WlqQcPhQf9Y8ks1nlb4ey-mWXUvanQ0ugVKWGzXRrYIkwdleEP-r9Z6jj9nV32rhuuTwWMJAmytDRWzy-rxuhMVNgOjat6dcSM" />
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <span class="text-pink-500 font-semibold mr-2">Naturopathic</span>
+                                <span class="mr-4">OCT 09, 2024</span>
+                                <span>2 MINS READ</span>
+                            </div>
+                            <h3 class="font-bold text-xl text-gray-800 mb-2">Care for yourself postpartum what every new
+                                new mom should know</h3>
+                            <a class="text-blue-600 font-semibold text-sm flex items-center" href="#">Read More <span
+                                    class="material-icons text-sm ml-1">arrow_forward</span></a>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block bg-white rounded-lg shadow-md overflow-hidden">
+                        <img alt="A doctor talking to a senior patient" class="w-full h-48 object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBkzfyrVh6o9WfwD3NipfsZ8Rsbu6Qc2GvuDised0N5FwzOa7pjRcmQhPnDQYDXDEwbtmhtP5SY7VIk-EDGmNNqTU1IVKQxuIRa0wQvgyXRsAx9InNsIYvDbGEg3OMV4be1Jt-ecjIS-_HgSP0YdjD6YmoVCRQfQOkZ0J9JANfOQmqHyfpu2FGmTc226lpT0M-3GZFApmNBTWcuwyP4AzP-V2qxrn52v5vWSu0jQG_eu6CgzXN_Rwgij6aAA9ClxX7SpLOQMUndrBw" />
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <span class="text-green-500 font-semibold mr-2">Geriatrics</span>
+                                <span class="mr-4">OCT 08, 2024</span>
+                                <span>5 MINS READ</span>
+                            </div>
+                            <h3 class="font-bold text-xl text-gray-800 mb-2">Keeping your mind sharp: tips for senior
+                                cognitive health</h3>
+                            <a class="text-blue-600 font-semibold text-sm flex items-center" href="#">Read More <span
+                                    class="material-icons text-sm ml-1">arrow_forward</span></a>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="absolute top-1/2 -translate-y-1/2 -left-4 bg-white p-2 rounded-full shadow-md hidden md:block">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button
+                    class="absolute top-1/2 -translate-y-1/2 -right-4 bg-white p-2 rounded-full shadow-md hidden md:block">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="md:col-span-2 lg:col-span-1">
+                    <img alt="Hosna logo white" class="h-8 mb-4"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjFYCB5mc-E218gREgIDPryXbyu66lTGSArIbEULKwbKAFH_qQjH3q3ngwCxAQCFO8igavYgR4AOMg5gK1Fbscdst1AfFTlQKY7nwcy5jaOldjVV3fwVYFAd8ZXXigE0OHuy3xNvAzH6KZobhOIOwKQHKmY0kj-LlqMvGMQE81zlB78S5CyQvgokJTgKRD-feZiWpUbx9GL4MMuN9x-YZ0KBqsVKaPSC7orq5stTZ85Otau4sf5tRTyiUh_Z6cbyvq695zIzdxy_k2" />
+                    <p class="text-sm text-gray-400 mb-2"><strong>Locations:</strong> 355-655-1256 Block 51a, NY.</p>
+                    <p class="text-sm text-gray-400 mb-2"><strong>Phone:</strong> +1 (123) 456-7890</p>
+                    <p class="text-sm text-gray-400"><strong>Opening Hours:</strong></p>
+                    <p class="text-sm text-gray-400">Monday - Friday: 08:00 AM - 08:00 PM</p>
+                    <p class="text-sm text-gray-400">Saturday: 09:00 AM - 05:00 PM</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Community</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a class="text-gray-400 hover:text-white" href="#">Forums</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Testimonials</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Blog</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">About</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a class="text-gray-400 hover:text-white" href="#">Our Mission</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Education</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Careers</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Areas Of Care</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Our Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a class="text-gray-400 hover:text-white" href="#">Patient Information</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Emergency Care</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Contact Us</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">FAQ</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Pay Your Bills</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Trust &amp; Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a class="text-gray-400 hover:text-white" href="#">Terms &amp; Conditions</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Privacy Policy</a></li>
+                        <li><a class="text-gray-400 hover:text-white" href="#">Disclaimer</a></li>
+                        <li class="pt-4">
+                            <h4 class="font-semibold">Social Media</h4>
+                        </li>
+                        <li class="flex space-x-3 pt-2">
+                            <a class="text-gray-400 hover:text-white" href="#"><img alt="Facebook icon" class="h-5"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZT4bruyuqbXQU_74h9QAIIfLE-B9eqBGs9ElZP_E81lEyUyKwNXZP81VPF6UzrNsBTt5SXTBFVX-BjwnRDGUREzG_Z4-jg0ZTU5RZrafw0AtqvsoPIY5BwHryNM8KUTtzMhI3toBpYENPBvRna_5oCvTmn7M5CmF2yBFAlRaaNZ8rB_Qz2dmKAJlIWwM4aIvAzih2S2FD23gZXJ65Mtldu1n7rOnKnluTEqakm4ts3dAZgKUDOz66WHENjzSNlxKcABRbzWGogENS" /></a>
+                            <a class="text-gray-400 hover:text-white" href="#"><img alt="Twitter icon" class="h-5"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO_3IMY01j6YUpQEWujdaduMbdHECzMrn_UfZT1-RJYyec1hAQ1KSs7S8cxHKrmpwbNs6m4U0T9jTHZnTPk5FD_VysT1H4Gv8EJ3V7G6wrwDyd5vYdZ-3EfDwPZRc-Nhgrbn1RU087GKx_H5DPZ65k7qJcf2cHPCnJxE9SMsx7zpCcB6GbeCGjIzEXj_QpcDXRMmxkIlJOFq6Rr7Vk0sUNIZ61APQLKoYzDBcY-vEPTkUFvjRMFlpDfH4z_yIBeDTls2SokAcqE80Y" /></a>
+                            <a class="text-gray-400 hover:text-white" href="#"><img alt="Instagram icon" class="h-5"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_wfRI-RvAOnP-n6zXdAG6xMca2G5iZQm_nvFX_gxay9Qgu46ZDTSG4yFUtad1GV6Zp3OowvHyIKAiSGWRNAkJ_f0l8aW4YFCrUUI01hBVxvXLfOOLYEZHMVhrl5APX0-MG0jN-akD74emdWgAHrKvkmEfEptVjkJj5dNfZrWBsxREAbufanasuPr777Ju-cpc80jGs4qFLp2gwagn83ZSASc0fw0SO9jF9IIU12i8843GrPdZd813AFLHP3mPraXD8MMSbvL0oYuW" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-500">
+                <p>© Hosna All Rights Reserved by <a class="text-blue-500 hover:underline" href="#">HiBootstrap</a></p>
+            </div>
+        </div>
+        <a class="fixed bottom-8 right-8 bg-blue-600 p-3 rounded-full shadow-lg text-white animate-bounce"
+            href="#appointment">
+            <span class="material-icons">arrow_upward</span>
+        </a>
+    </footer>
+<script src="js/scriptt.js"></script>
+</body>
+
+</html>
